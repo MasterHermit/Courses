@@ -1,7 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import Home from "./pages/COURSE/Hero";
-import Hero from "./pages/COURSE/Hero";
+
+import Home from "./pages/COURSE/Home";
+import Courses from "./pages/COURSE/Coursess/Courses";
+import Jobs from "./pages/COURSE/Jobs/Jobs";
+import Quizes from "./pages/COURSE/Quizes/Quizes";
+import Interests from "./pages/COURSE/Interests/Interests";
+
 
 function App() {
   return (
@@ -10,8 +15,11 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home/>} />
-          
+          <Route exact path="/" element={<Home />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/jobs" element={<Jobs />} />
+          <Route path="/quiz" element={<Quizes />} />
+          <Route path="/interest" element={<Interests />} />
         </Routes>
       </Router>
     </div>

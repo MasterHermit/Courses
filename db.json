@@ -1,8 +1,53 @@
 {
-    "courses":[
+    "courses": [
         {
             "course_id": "",
             "title": "",
+            "thumbnail": "",
+            "description": "",
+            "instructor_name": "",
+            "ratings": "",
+            "feedback": "",
+            "language": "",
+            "no_of_certifications": ""
+        },
+        {
+            "course_id": "",
+            "title": "",
+            "thumbnail": "",
+            "description": "",
+            "instructor_name": "",
+            "ratings": "",
+            "feedback": "",
+            "language": "",
+            "no_of_certifications": ""
+        },
+        {
+            "course_id": "",
+            "title": "",
+            "thumbnail": "",
+            "description": "",
+            "instructor_name": "",
+            "ratings": "",
+            "feedback": "",
+            "language": "",
+            "no_of_certifications": ""
+        },
+        {
+            "course_id": "",
+            "title": "",
+            "thumbnail": "",
+            "description": "",
+            "instructor_name": "",
+            "ratings": "",
+            "feedback": "",
+            "language": "",
+            "no_of_certifications": ""
+        },
+        {
+            "course_id": "",
+            "title": "",
+            "thumbnail": "",
             "description": "",
             "instructor_name": "",
             "ratings": "",

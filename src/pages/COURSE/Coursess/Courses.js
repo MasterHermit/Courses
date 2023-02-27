@@ -1,5 +1,6 @@
 import React from "react";
 import { useFetchCoursesQuery } from "../../../store";
+import CourseCard from "./CourseCard";
 
 const Courses = () => {
   const { data, error, isLoading } = useFetchCoursesQuery();

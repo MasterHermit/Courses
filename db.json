@@ -1,0 +1,14 @@
+{
+    "courses":[
+        {
+            "course_id": "",
+            "title": "",
+            "description": "",
+            "instructor_name": "",
+            "ratings": "",
+            "feedback": "",
+            "language": "",
+            "no_of_certifications": ""
+        }
+    ]
+}

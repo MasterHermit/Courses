@@ -1,0 +1,17 @@
+.courseCard-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(5,1fr); 
+      grid-template-areas: 
+      "t t"
+      "t t"
+      "t t"
+      "c c"
+      "c c";
+}
+.thumbnail{
+    grid-area:t;
+}
+.course-content{
+grid-area: c;
+}

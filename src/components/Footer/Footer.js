@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col md:flex-row bg-slate-500 w-full h-auto p-4 items-center">
+    <div className="flex flex-col md:flex-row bg-slate-500 w-full  h-auto p-4 items-center ">
       <div className="flex flex-col   ">
         <Link to="/">
           <img

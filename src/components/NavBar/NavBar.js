@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import "./NavBar.css";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
 
@@ -8,26 +9,26 @@ const NavBar = () => {
     setNav(!nav);
   };
   return (
-    <div className="flex bg-[#9dcee2] justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-[#65010c] font-bold text-lg">
-      <h1 className="w-full text-3xl font-bold text-black ">PrepLabs.</h1>
+    <div className="flex bg-[#9dcee2] justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-[#65010c] font-bold text-lg borderYtoX ">
+      <h1 className="w-full text-3xl font-bold text-black">PrepLabs</h1>
       <ul className="hidden md:flex">
         <Link to="/">
-          <li className="p-4">Home</li>
+          <li className="p-4 hover:text-cyan-600 hover:scale-110 ">Home</li>
         </Link>
         <Link to="/course">
-          <li className="p-4">Courses</li>
+          <li className="p-4  hover:text-cyan-600 hover:scale-110">Courses</li>
         </Link>
         <Link to="jobs">
-          <li className="p-4"> Jobs</li>
+          <li className="p-4  hover:text-cyan-600 hover:scale-110"> Jobs</li>
         </Link>
         <Link to="/quiz">
-          <li className="p-4">Quiz</li>
+          <li className="p-4  hover:text-cyan-600 hover:scale-110">Quiz</li>
         </Link>
         <Link to="/interest">
-          <li className="p-4">Interests</li>
+          <li className="p-4  hover:text-cyan-600 hover:scale-110">Interests</li>
         </Link>
         <Link to="/user">
-          <li className="p-4">User</li>
+          <li className="p-4  hover:text-cyan-600 hover:scale-110">User</li>
         </Link>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
@@ -41,7 +42,7 @@ const NavBar = () => {
         }
       >
         <Link to="/">
-          <li className="p-4 border-b border-gray-600">Home</li>
+          <li className="p-4 border-b border-gray-600 ">Home</li>
         </Link>
         <Link to="/course">
           <li className="p-4 border-b border-gray-600">Courses</li>

@@ -1,0 +1,29 @@
+/* Border in Y to X  */
+div.borderYtoX li:before, div.borderYtoX li:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderYtoX li:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX li:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX li:hover:before, div.borderYtoX li:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}

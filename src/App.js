@@ -7,6 +7,7 @@ import Jobs from "./pages/COURSE/Jobs/Jobs";
 import Quizes from "./pages/COURSE/Quizes/Quizes";
 import Interests from "./pages/COURSE/Interests/Interests";
 import UserProfile from "./pages/USER/UserProfile";
+import CreatePost from "./pages/SOCIAL/CreatePost";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/quiz" element={<Quizes />} />
           <Route path="/interest" element={<Interests />} />
           <Route path="/user" element={<UserProfile />} />
+          <Route path="/create_post" element={<CreatePost />} />
         </Routes>
         <Footer />
       </Router>

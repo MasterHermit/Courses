@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../../components/Hero/Hero";
 import Courses from "./Coursess/Courses";
+import Card from "../../../src/components/Cards/Card"
 
 //css import
 import "./Home.css";
@@ -12,7 +13,7 @@ const Home = () => {
         <Hero />
       </div>
       <div className="courses">
-        <Courses />
+        <Card />
       </div>
     </div>
   );

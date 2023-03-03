@@ -8,12 +8,12 @@ const coursesApi = createApi({
   endpoints(builder) {
     return {
       fetchCourses: builder.query({
-        query: (user) => {
+        query: () => {
           return {
             url: "/courses",
-            params:{
-              userId: user.id,
-            },
+            // params: {
+            //   userId: user.id,
+            // },
             method: "GET",
           };
         },

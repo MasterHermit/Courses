@@ -5,7 +5,7 @@
 
 
 img{
-    width: 90%;
+    width: 100%;
     height: 100%;
     padding: 5px;
     display: block;
@@ -35,7 +35,6 @@ img{
 .cards_wrap .card_top{
     width: 100%;
     height: auto;
-    padding: 10px;
     padding-bottom: 0;
 }
 
@@ -44,20 +43,23 @@ img{
 }
 
 .cards_wrap .card_bottom .card_category{
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 1000;
+    /* text-transform: uppercase; */
+    /* text-align: center; */
+    font-weight: 700;
+    display: flex;
 }
 
 .cards_wrap .card_bottom .card_info{
-    padding: 15px;
+    /* padding: 15px; */
+    /* border: 1px dashed #0071bc; */
     margin: 10px 0;
-    border: 1px dashed #0071bc;
+    margin-top:0;
+    
 
 }
 
 .cards_wrap .card_bottom .card_info .title{
-    color: #0071bc;
+    /* color: #0071bc; */
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 5px;
@@ -69,7 +71,7 @@ img{
     font-weight: 700;
 }
 
-@media (max-width: 900px){
+/* @media (max-width: 900px){
     .cards_wrap .card_item{
         width: 100%;
         padding: 20px;
@@ -78,4 +80,8 @@ img{
         width: auto;
         height: 100px;
     }
-}
+    .card_top{
+        margin-left: 20px; */
+        /* border: 2px solid red;
+        object-fit: contain;  
+    } */

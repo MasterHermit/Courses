@@ -1,6 +1,6 @@
 import React from 'react';
-import { useFetchAllPostQuery } from "../../store";
-
+import { useFetchAllPostQuery } from "../../../store";
+import Post from "../Post/Post"
 const Posts = ({ user }) => {
     const { data, error, isLoading } = useFetchAllPostQuery(user);
     let content;
@@ -15,7 +15,7 @@ const Posts = ({ user }) => {
     }
     return (
         <div>
-            
+            <Post />
         </div>
     );
 };

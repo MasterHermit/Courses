@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Post = ({data}) => {
+const Post = ({ data }) => {
     return (
-        <div>
-          
+        <div className="flex h-28 w-28 bg-black">
+
         </div>
     );
 };

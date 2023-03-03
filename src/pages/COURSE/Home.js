@@ -1,20 +1,13 @@
 import React from "react";
-import Hero from "../../components/Hero/Hero";
-import Courses from "./Coursess/Courses";
-import Card from "../../../src/components/Cards/Card"
+//import Hero from "../../components/Hero/Hero";
+import Posts from "../SOCIAL/Posts/Posts"
 
-//css import
-import "./Home.css";
+import "./Home.css"
 
 const Home = () => {
   return (
-    <div className="home-container">
-      <div className="hero">
-        <Hero />
-      </div>
-      <div className="courses">
-        <Card />
-      </div>
+    <div className="min-w-screen min-h-screen bg-slate-400 ">
+      <Posts />
     </div>
   );
 };

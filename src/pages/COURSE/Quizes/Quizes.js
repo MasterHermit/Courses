@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { quiz } from './quiz'
 import './Quiz.css'
 
 const Quizes = () => {
+  const navigate = useNavigate();
   const [activeQuestion, setActiveQuestion] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState('')
   const [showResult, setShowResult] = useState(false)
@@ -73,6 +75,9 @@ const Quizes = () => {
             ))}
           </ul>
           <div className="flex justify-end">
+            <button className="mr-4 !bg-red-400 hover:bg-red-500 " onClick={() => navigate("/")}>
+              Cancel
+            </button>
             <button
               onClick={onClickNext}
               disabled={selectedAnswerIndex === null}>
@@ -95,6 +100,9 @@ const Quizes = () => {
           <p>
             Wrong Answers:<span> {result.wrongAnswers}</span>
           </p>
+          <button
+            onClick={() => window.location.reload()}
+          >Try Again</button>
         </div>
       )}
     </div>

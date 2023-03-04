@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/COURSE/Home";
 import Courses from "./pages/COURSE/Coursess/Courses";
+import CourseDetails from "./pages/COURSE/Coursess/courseDetails/CourseDetails";
 import Jobs from "./pages/COURSE/Jobs/Jobs";
 import Quizes from "./pages/COURSE/Quizes/Quizes";
 import Interests from "./pages/COURSE/Interests/Interests";
@@ -17,7 +18,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/course" element={<Courses />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/course_details" element={<CourseDetails />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/quiz" element={<Quizes />} />
           <Route path="/interest" element={<Interests />} />

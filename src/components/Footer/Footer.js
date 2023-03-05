@@ -53,23 +53,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h2 className="mb-6 text-m font-semibold text-gray-500 uppercase dark:text-gray-400">Download</h2>
-                    <ul className="text-gray-500 dark:text-gray-400">
-                        <li className="mb-4">
-                            <a href="#" className="hover:underline">iOS</a>
-                        </li>
-                        <li className="mb-4">
-                            <a href="#" className="hover:underline">Android</a>
-                        </li>
-                        <li className="mb-4">
-                            <a href="#" className="hover:underline">Windows</a>
-                        </li>
-                        <li className="mb-4">
-                            <a href="#" className="hover:underline">MacOS</a>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
             <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
                 <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a href="#"></a>. All Rights Reserved.

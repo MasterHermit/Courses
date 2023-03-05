@@ -11,16 +11,21 @@ const coursesApi = createApi({
         query: () => {
           return {
             url: "/courses",
-            // params: {
-            //   userId: user.id,
-            // },
             method: "GET",
           };
         },
       }),
+      fetchCourse: builder.query({
+        query: (id) => {
+          return {
+            ur: `/courses/${id}`,
+            method: "GET",
+          }
+        }
+      })
     };
   },
 });
 
-export const { useFetchCoursesQuery } = coursesApi;
+export const { useFetchCoursesQuery, useFetchCourseQuery } = coursesApi;
 export { coursesApi };

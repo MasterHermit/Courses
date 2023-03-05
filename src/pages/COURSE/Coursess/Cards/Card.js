@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-
 import { GiDuration } from "react-icons/gi"
 import { BiBookReader } from "react-icons/bi"
 import { FaStar } from "react-icons/fa"
@@ -11,16 +10,21 @@ const Card = ({ course }) => {
     <div className='h-full flex p-2 '>
 
       <div className='flex bg-zinc-500 flex-col h-[400px] w-[400px] max-w-xs rounded overflow-hidden mb-3 shadow-lg'>
-        <Link to="/course_details">
-          <div className='h-[200px] w-auto'>
+
+        <Link to={`/courses/${course.course_id}`}>
+          <div
+            className='h-[200px] w-auto cursor-pointer'>
             <img src={course.thumbnail} alt={course.title} />
           </div>
         </Link>
         <div className='flex flex-col h-auto w-auto bg-zinc-50'>
-          <Link to="/course_details">
+
+          <Link to={`/courses/${course.course_id}`}>
             <div
-              className=' h-[100px] flex items-center mt-4 text-xl font-bold hover:text-sky-400'>{course.title}</div>
+              className=' h-[100px] flex items-center mt-4 text-xl font-bold hover:text-sky-400 cursor-pointer'>{course.title}
+            </div>
           </Link>
+
           <hr className="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700 "></hr>
           <div className='flex flex-row justify-between'>
             <div className='flex ml-[10px] pb-1 text-sky-400/100'>
@@ -45,7 +49,7 @@ const Card = ({ course }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
 
 
   );

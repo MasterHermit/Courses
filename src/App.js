@@ -9,6 +9,7 @@ import Quizes from "./pages/COURSE/Quizes/Quizes";
 import Interests from "./pages/COURSE/Interests/Interests";
 import UserProfile from "./pages/USER/UserProfile";
 import CreatePost from "./pages/SOCIAL/CreatePost/CreatePost";
+import Error from "./pages/Error/Error";
 
 
 function App() {
@@ -17,14 +18,15 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/course_details" element={<CourseDetails />} />
+          <Route path="/courses/:id" element={<CourseDetails />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/quiz" element={<Quizes />} />
           <Route path="/interest" element={<Interests />} />
           <Route path="/user" element={<UserProfile />} />
           <Route path="/create_post" element={<CreatePost />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </div>

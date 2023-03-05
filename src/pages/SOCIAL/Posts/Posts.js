@@ -10,12 +10,14 @@ const Posts = () => {
     else if (error) {
         content = <div>Error..</div>
     } else {
-        content = data
-        console.log(content);
+        content = data.map((post) => {
+            return <Post data={post} />
+        })
+
     }
     return (
         <div>
-            <Post />
+            {content}
         </div>
     );
 };

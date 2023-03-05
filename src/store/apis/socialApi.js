@@ -9,13 +9,20 @@ const socialApi = createApi({
     endpoints(builder) {
         return {
             fetchAllPost: builder.query({
-                query: (user) => {
+                query: () => {
                     return {
                         url: "/posts",
-                        params: {
-                            userId: user.id
-                        },
                         method: "GET",
+                    }
+                }
+            }),
+            createPost: builder.mutation({
+                query: (payload) => {
+                    console.log(payload);
+                    return {
+                        url: "/posts",
+                        body: payload,
+                        method: "POST",
                     }
                 }
             })
@@ -23,5 +30,5 @@ const socialApi = createApi({
     }
 })
 
-export const { useFetchAllPostQuery } = socialApi
+export const { useFetchAllPostQuery, useCreatePostMutation } = socialApi
 export { socialApi }

@@ -23,5 +23,5 @@ setupListeners(store.dispatch);
 
 export { useFetchCoursesQuery, useFetchCourseQuery } from "./apis/coursesApi";
 export { useFetchQuizQuery } from "./apis/quizApi";
-export { useFetchAllPostQuery } from "./apis/socialApi";
+export { useFetchAllPostQuery, useCreatePostMutation } from "./apis/socialApi";
 

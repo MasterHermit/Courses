@@ -25,7 +25,7 @@ function App() {
           <Route path="/quiz" element={<Quizes />} />
           <Route path="/interest" element={<Interests />} />
           <Route path="/user" element={<UserProfile />} />
-          <Route path="/create_post" element={<CreatePost />} />
+          <Route path="/posts/create" element={<CreatePost />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

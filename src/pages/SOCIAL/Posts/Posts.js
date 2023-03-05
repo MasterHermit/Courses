@@ -1,8 +1,8 @@
 import React from 'react';
 import { useFetchAllPostQuery } from "../../../store";
 import Post from "../Post/Post"
-const Posts = ({ user }) => {
-    const { data, error, isLoading } = useFetchAllPostQuery(user);
+const Posts = () => {
+    const { data, error, isLoading } = useFetchAllPostQuery();
     let content;
     if (isLoading) {
         content = <div>Loading...</div>

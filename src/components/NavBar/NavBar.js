@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
+import { MdOutlineBookOnline } from "react-icons/md"
+import { BiUserCircle } from "react-icons/bi";
+import { VscFileCode } from "react-icons/vsc";
+import { RiSuitcaseLine } from "react-icons/ri";
+import { TfiNotepad } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 const NavBar = () => {
@@ -13,22 +19,52 @@ const NavBar = () => {
       <h1 className="w-full text-3xl font-bold text-black">PrepLabs</h1>
       <ul className="hidden md:flex">
         <Link to="/">
+          <span className="flex ">
+            <span className="place-items-end self-center hover:text-cyan-600 hover:scale-110">
+            <AiOutlineHome/>
+            </span>
           <li className="p-4 hover:text-cyan-600 hover:scale-110 ">Home</li>
+          </span>
         </Link>
         <Link to="/course">
+          <span className="flex">
+            <span className="self-center hover:text-cyan-600 hover:scale-110">
+              <MdOutlineBookOnline/>
+            </span>
           <li className="p-4  hover:text-cyan-600 hover:scale-110">Courses</li>
+          </span>
         </Link>
         <Link to="jobs">
+          <span className="flex">
+            <span className="self-center hover:text-cyan-600 hover:scale-110">
+            <RiSuitcaseLine/>
+            </span>
           <li className="p-4  hover:text-cyan-600 hover:scale-110"> Jobs</li>
+          </span>
         </Link>
         <Link to="/quiz">
+          <span className="flex">
+            <span className="self-center hover:text-cyan-600 hover:scale-110">
+            <VscFileCode/>              
+            </span>
           <li className="p-4  hover:text-cyan-600 hover:scale-110">Quiz</li>
+          </span>
         </Link>
         <Link to="/interest">
-          <li className="p-4  hover:text-cyan-600 hover:scale-110">Interests</li>
+          <span className="flex">
+            <span className="self-center hover:text-cyan-600 hover:scale-110">
+              <TfiNotepad/>
+            </span>
+            <li className="p-4  hover:text-cyan-600 hover:scale-110">Interests</li>
+          </span>
         </Link>
         <Link to="/user">
-          <li className="p-4  hover:text-cyan-600 hover:scale-110">User</li>
+          <span className="flex">
+            <span className="self-center  hover:text-cyan-600 hover:scale-110">
+              <BiUserCircle/>
+            </span> 
+            <li className="p-4  hover:text-cyan-600 hover:scale-110">User</li>
+          </span>
         </Link>
       </ul>
       <div onClick={handleNav} className="block md:hidden">

@@ -1,59 +1,75 @@
 {
-    "courses": [
-        {
-            "course_id": "gfgghhgd",
-            "title": "Me With My Team",
-            "thumbnail": "https://images.unsplash.com/photo-1677504207981-618778a3abd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-            "description": "la la la ala al alalla alal al ala a",
-            "instructor_name": "asriti nout",
-            "ratings": "5",
-            "feedback": "",
-            "language": "english",
-            "no_of_certifications": "1234"
-        },
-        {
-            "course_id": "sfdvbfd",
-            "title": "gdbsgdbg",
-            "thumbnail": "https://images.unsplash.com/photo-1677169280946-95b7e569d6ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-            "description": "fsdggffg",
-            "instructor_name": "sgffdgff",
-            "ratings": "4.5",
-            "feedback": "ffsffd",
-            "language": "dffsgf",
-            "no_of_certifications": "fddsffsdgd"
-        },
-        {
-            "course_id": "fggsffgsfg",
-            "title": "gthteg",
-            "thumbnail": "https://images.unsplash.com/photo-1677414455821-b2409b641629?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-            "description": "yetuytyityuiouiouipiypyioityuertwetrtreuyriyr",
-            "instructor_name": "etyrtytry",
-            "ratings": "4.6",
-            "feedback": "tweryrturitu",
-            "language": "hindi",
-            "no_of_certifications": "45676"
-        },
-        {
-            "course_id": "ertervc",
-            "title": "sfdgdsfgsfd",
-            "thumbnail": "https://images.unsplash.com/photo-1677484179240-ff398b0a2d09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-            "description": "fasdgfasgagasfhsgddvfdhyuudfaerwfdadasfad",
-            "instructor_name": "qwrewtreytry",
-            "ratings": "4",
-            "feedback": "errerertdsfsfdbjukuli;lulku",
-            "language": "odia",
-            "no_of_certifications": "45667"
-        },
-        {
-            "course_id": "gfngturyf",
-            "title": "fweqtrhtsb",
-            "thumbnail": "https://images.unsplash.com/photo-1677492691756-a3433e656ea6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-            "description": "cvfdwrfcvvqwfegtrrjykujenyhqrerq",
-            "instructor_name": "ewregreger",
-            "ratings": "3",
-            "feedback": "",
-            "language": "telgu",
-            "no_of_certifications": "6789"
-        }
-    ]
+  "courses": [
+    {
+      "course_id": "gfgghhgd",
+      "title": "Modern react and redux : Learn with projects",
+      "thumbnail": "https://images.unsplash.com/photo-1677504207981-618778a3abd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "la la la ala al alalla alal al ala a",
+      "instructor_name": "asriti nout",
+      "ratings": "5",
+      "feedback": "",
+      "language": "english",
+      "no_of_certifications": "1234"
+    },
+    {
+      "course_id": "sfdvbfd",
+      "title": "gdbsgdbg",
+      "thumbnail": "https://images.unsplash.com/photo-1677169280946-95b7e569d6ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      "description": "fsdggffg",
+      "instructor_name": "sgffdgff",
+      "ratings": "4.5",
+      "feedback": "ffsffd",
+      "language": "dffsgf",
+      "no_of_certifications": "fddsffsdgd"
+    },
+    {
+      "course_id": "fggsffgsfg",
+      "title": "gthteg",
+      "thumbnail": "https://images.unsplash.com/photo-1677414455821-b2409b641629?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "description": "yetuytyityuiouiouipiypyioityuertwetrtreuyriyr",
+      "instructor_name": "etyrtytry",
+      "ratings": "4.6",
+      "feedback": "tweryrturitu",
+      "language": "hindi",
+      "no_of_certifications": "45676"
+    },
+    {
+      "course_id": "ertervc",
+      "title": "sfdgdsfgsfd",
+      "thumbnail": "https://images.unsplash.com/photo-1677484179240-ff398b0a2d09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "description": "fasdgfasgagasfhsgddvfdhyuudfaerwfdadasfad",
+      "instructor_name": "qwrewtreytry",
+      "ratings": "4",
+      "feedback": "errerertdsfsfdbjukuli;lulku",
+      "language": "odia",
+      "no_of_certifications": "45667"
+    },
+    {
+      "course_id": "gfngturyf",
+      "title": "fweqtrhtsb",
+      "thumbnail": "https://images.unsplash.com/photo-1677492691756-a3433e656ea6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "description": "cvfdwrfcvvqwfegtrrjykujenyhqrerq",
+      "instructor_name": "ewregreger",
+      "ratings": "3",
+      "feedback": "",
+      "language": "telgu",
+      "no_of_certifications": "6789"
+    }
+  ],
+  "posts": [
+    {
+      "title": "railway exam is coming",
+      "banner": "",
+      "content": "<p><strong>Railway Exam Preparation 2023:</strong></p><p><strong><br></strong></p><p><u>Tips To qualify the RRB exams 2023 finally do the following strategies of RRB exam preparation:</u></p><p><br></p><ol><li> Make a realistic study time table for RRB exam or railway exam preparation </li><li>Understand the exam pattern of RRB recruitment 2023 exam </li><li>RRB mock tests 2023 and previous year papers of railway exams.</li></ol>",
+      "category": "2",
+      "id": 1
+    },
+    {
+      "title": "medical exam is coming",
+      "banner": "",
+      "content": "<p><strong>Medical Preparation:</strong></p><p>kjknkfdkflksndlkaf</p>",
+      "category": "5",
+      "id": 2
+    }
+  ]
 }

@@ -20,10 +20,10 @@ const Courses = () => {
   return <div className="flex flex-col">
 
     <Hero />
-    <div className="flex flex-col flex-wrap m-6 md:ml-24">
+    <div className="flex flex-col flex-wrap m-2 md:ml-24">
       <div className=" flex flex-row items-center m-6 text-6xl">
         <span><MdCastForEducation /></span>
-        <p className="ml-6">Courses</p>
+        <p className="">Courses</p>
 
       </div>
       <div className="flex flex-row flex-wrap">

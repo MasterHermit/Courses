@@ -21,39 +21,39 @@ const NavBar = () => {
         <Link to="/">
           <span className="flex ">
             <span className="place-items-end self-center hover:text-cyan-600 hover:scale-110">
-            <AiOutlineHome/>
+              <AiOutlineHome />
             </span>
-          <li className="p-4 hover:text-cyan-600 hover:scale-110 ">Home</li>
+            <li className="p-4 hover:text-cyan-600 hover:scale-110 ">Home</li>
           </span>
         </Link>
-        <Link to="/course">
+        <Link to="/courses">
           <span className="flex">
             <span className="self-center hover:text-cyan-600 hover:scale-110">
-              <MdOutlineBookOnline/>
+              <MdOutlineBookOnline />
             </span>
-          <li className="p-4  hover:text-cyan-600 hover:scale-110">Courses</li>
+            <li className="p-4  hover:text-cyan-600 hover:scale-110">Courses</li>
           </span>
         </Link>
         <Link to="jobs">
           <span className="flex">
             <span className="self-center hover:text-cyan-600 hover:scale-110">
-            <RiSuitcaseLine/>
+              <RiSuitcaseLine />
             </span>
-          <li className="p-4  hover:text-cyan-600 hover:scale-110"> Jobs</li>
+            <li className="p-4  hover:text-cyan-600 hover:scale-110"> Jobs</li>
           </span>
         </Link>
         <Link to="/quiz">
           <span className="flex">
             <span className="self-center hover:text-cyan-600 hover:scale-110">
-            <VscFileCode/>              
+              <VscFileCode />
             </span>
-          <li className="p-4  hover:text-cyan-600 hover:scale-110">Quiz</li>
+            <li className="p-4  hover:text-cyan-600 hover:scale-110">Quiz</li>
           </span>
         </Link>
         <Link to="/interest">
           <span className="flex">
             <span className="self-center hover:text-cyan-600 hover:scale-110">
-              <TfiNotepad/>
+              <TfiNotepad />
             </span>
             <li className="p-4  hover:text-cyan-600 hover:scale-110">Interests</li>
           </span>
@@ -61,8 +61,8 @@ const NavBar = () => {
         <Link to="/user">
           <span className="flex">
             <span className="self-center  hover:text-cyan-600 hover:scale-110">
-              <BiUserCircle/>
-            </span> 
+              <BiUserCircle />
+            </span>
             <li className="p-4  hover:text-cyan-600 hover:scale-110">User</li>
           </span>
         </Link>

@@ -5,7 +5,7 @@ import CarousalCard from './CarousalCard';
 const Carousal = () => {
     return (
 
-        <div id="default-carousel" className="relative" data-carousel="slide">
+        <div id="default-carousel" className="relative z-0" data-carousel="slide">
 
             <div className="relative  overflow-hidden h-[17rem] rounded-lg ">
 

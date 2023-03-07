@@ -7,7 +7,7 @@ const CarousalCard = () => {
 
             </div>
             <div>
-
+                
             </div>
         </div>
     );

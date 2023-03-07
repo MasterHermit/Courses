@@ -11,13 +11,14 @@ const Carousal = () => {
 
                 <div className="hidden duration-700 ease-in-out  " data-carousel-item>
                     <a href="https://www.freepik.com/free-vector/autumn-background_16713475.htm#from_view=detail_author" >
-
                         <img src="https://img.freepik.com/free-vector/autumn-background_23-2149054409.jpg?t=st=1678156088~exp=1678156688~hmac=db32e6a9ce8e73450133f223f6cc36ce1ebf732b9f524a708bd051474acf9356" alt="caarousal" />
                     </a>
                 </div>
 
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="https://images.unsplash.com/photo-1678106741653-455a43825002?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="caraousal2" />
+                    <a href="https://unsplash.com/" >
+                        <img src="https://images.unsplash.com/photo-1678106741653-455a43825002?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="caraousal2" />
+                    </a>
                 </div>
 
 

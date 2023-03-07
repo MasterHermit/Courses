@@ -1,10 +1,4 @@
-// import React from "react";
 
-// const Interests = () => {
-//   return <div>Interests</div>;
-// };
-
-// export default Interests;
 
 import React, { useState } from 'react';
 import Interest from './Interest';
@@ -19,8 +13,8 @@ const Interests = () => {
         setData(result);
     }
     return (
-      <>
-           <h2 class="text-4xl font-extrabold dark:text-white text-center">Interests</h2>
+        <>
+            <h2 class="text-4xl font-extrabold dark:text-white text-center">Interests</h2>
 
             {/* left sidebar */}
             <div className='flex flex-row w-screen  justify-center items-center'>
@@ -29,37 +23,37 @@ const Interests = () => {
                         <ul className="space-y-2">
                             <li>
                                 <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={()=>setData(Categories)}>All</button>
+                                    <button className='btn btn-warning w-100 mb-4' onClick={() => setData(Interest)}>All</button>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={()=>filterResult('Engineering')}>Engineering</button>
+                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('Engineering')}>Engineering</button>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={()=>filterResult('Medical')}>Medical</button>
+                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('Medical')}>Medical</button>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={()=>filterResult('Administration')}>Administration</button>
+                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('Administration')}>Administration</button>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={()=>filterResult('B.Sc')}>B.Sc</button>
+                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('B.Sc')}>B.Sc</button>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={()=>filterResult('PCM')}>PCM</button>
+                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('PCM')}>PCM</button>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={()=>filterResult('PCMB')}>PCMB</button>
+                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('PCMB')}>PCMB</button>
                                 </a>
                             </li>
                         </ul>

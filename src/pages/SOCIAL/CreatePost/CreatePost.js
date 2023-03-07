@@ -47,10 +47,10 @@ const CreatePost = () => {
         }
         addPost(post);
         setPost({ title: "", banner: "", content: "", category: "" })
-        console.log(post);
+
     }
     return (
-        <div className="flex flex-col items-center w-screen">
+        <div className="flex flex-col items-center w-screen ">
             <div className=" w-full mt-6 px-4 md:w-[80%]">
                 <form onSubmit={handleSubmit}>
 
@@ -66,7 +66,6 @@ const CreatePost = () => {
                     </div>
                     <div className="my-4 ">
                         <FileBase
-
                             type="file"
                             multiple={false}
                             onDone={({ base64 }) => setPost({ ...post, banner: base64 })}
@@ -78,7 +77,6 @@ const CreatePost = () => {
                         <JoditEditor
                             ref={editor}
                             value={post.content}
-
                             onChange={(newContent) => contentFieldChanaged(newContent)}
                         />
                     </div>

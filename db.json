@@ -78,5 +78,22 @@
       "category": "2",
       "id": 3
     }
+  ],
+  "users": [
+    {
+      "user_id": "",
+      "user_interest": [],
+      "user_skills": [],
+      "user_experience": [],
+      "user_data": {
+        "email": "",
+        "username": "",
+        "phone_no": "",
+        "social_links": {
+          "facebook": "",
+          "linkedin": ""
+        }
+      }
+    }
   ]
 }

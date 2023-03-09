@@ -25,10 +25,20 @@ const socialApi = createApi({
                         method: "POST",
                     }
                 }
+            }),
+            updatePost: builder.mutation({
+                   query: (payload) => {
+                    
+                   }
+            }),
+            updatePostLike: builder.mutation({
+                query:(payload)=>{
+                    
+                }
             })
         }
     }
 })
 
-export const { useFetchAllPostQuery, useCreatePostMutation } = socialApi
+export const { useFetchAllPostQuery, useCreatePostMutation,useUpdatePostLikeMutation } = socialApi
 export { socialApi }

@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa"
 const Card = ({ course }) => {
 
   return (
-    <div className='h-full flex p-2 '>
+    <div className='flex p-2 '>
 
       <div className='flex bg-zinc-500 flex-col h-[400px] w-[400px] max-w-xs rounded overflow-hidden mb-3 shadow-lg'>
 

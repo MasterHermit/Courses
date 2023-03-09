@@ -3,15 +3,6 @@ import { useParams } from 'react-router-dom';
 import { useFetchCourseQuery } from '../../../../store';
 import Error from "../../../Error/Error"
 import Footer from "../../../../components/Footer/Footer"
-import "./CourseDetails.css"
-import {CiApple} from 'react-icons/ci'
-import {DiJavascript1} from 'react-icons/di';
-import {RiEnglishInput} from 'react-icons/ri';
-import {AiOutlineCalendar} from 'react-icons/ai';
-import {BsCalendar2Date} from 'react-icons/bs'
-import {BsHourglassTop} from 'react-icons/bs'
-import {BsBook} from 'react-icons/bs'
-import {GrCodeSandbox} from 'react-icons/gr'
 
 const CourseDetails = () => {
     const { id } = useParams();
@@ -41,8 +32,8 @@ const CourseDetails = () => {
     const info = "When I read something on websites and saw a show more/less button, I thought it was a good feature because it makes everything on the website look more clean. So I would like to share an easy way to insert a show more/less button by using React- State Hook."
     return (
         <div className='flex flex-col  h-auto  '>
-            <div className='  m-2 md:ml-6 course__banner'>
-                <p className='font-bold text-white text-3xl m-1 text-center '>
+            <div className='  ml-2 md:ml-6'>
+                <p className='font-bold text-3xl'>
                     Javascript in your finger tips : touch me
                 </p>
                 <p className='m-1 text-gray-400 text-justify'>
@@ -94,7 +85,7 @@ const CourseDetails = () => {
                     </span>
                 </div>
             </div>
-            <div className=' ml-2 m-2 md:ml-6 '>
+            <div className=' ml-2 md:ml-6'>
                 <p className='overflow-clip leading-relaxed'>
                     {showMore ? info : `${info.substring(0, 20)}... `}
                     <button
@@ -105,8 +96,11 @@ const CourseDetails = () => {
                 </p>
                 <div className="mt-6">Course Details klkdkjljklf</div>
             </div>
-            <div className='ml-2 md:ml-6'>
-                <div>Curriculum</div>
+            <div className='m-2 md:m-6'>
+                <div className='h-auto  '>
+                    <p className='text-2xl font-bold mb-6'>Course Content</p>
+                    <CurriculumCard />
+                </div>
                 <div>
 
                 </div>

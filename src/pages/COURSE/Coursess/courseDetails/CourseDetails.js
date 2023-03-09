@@ -3,6 +3,15 @@ import { useParams } from 'react-router-dom';
 import { useFetchCourseQuery } from '../../../../store';
 import Error from "../../../Error/Error"
 import Footer from "../../../../components/Footer/Footer"
+import "./CourseDetails.css"
+import {CiApple} from 'react-icons/ci'
+import {DiJavascript1} from 'react-icons/di';
+import {RiEnglishInput} from 'react-icons/ri';
+import {AiOutlineCalendar} from 'react-icons/ai';
+import {BsCalendar2Date} from 'react-icons/bs'
+import {BsHourglassTop} from 'react-icons/bs'
+import {BsBook} from 'react-icons/bs'
+import {GrCodeSandbox} from 'react-icons/gr'
 
 const CourseDetails = () => {
     const { id } = useParams();
@@ -32,21 +41,60 @@ const CourseDetails = () => {
     const info = "When I read something on websites and saw a show more/less button, I thought it was a good feature because it makes everything on the website look more clean. So I would like to share an easy way to insert a show more/less button by using React- State Hook."
     return (
         <div className='flex flex-col  h-auto  '>
-            <div className='  ml-2 md:ml-6'>
-                <p className='font-bold text-3xl'>
+            <div className='  m-2 md:ml-6 course__banner'>
+                <p className='font-bold text-white text-3xl m-1 text-center '>
                     Javascript in your finger tips : touch me
                 </p>
-                <div className='my-4 py-2'>
-                    <p>PrepLabs</p>
-                    <p>language - English</p>
-                    <p>Updated on Feb, 2023</p>
-                    <p>Development, Python</p>
-                    <p>Uses in  ---- --- -------</p>
-                    <p>40+ hours</p>
-                    <p>10 lectures</p>
+                <p className='m-1 text-gray-400 text-justify'>
+                    Go from complete novice to expert in Javascript using step
+                    -by-step, no-assumptions learning.
+                </p>
+                <div className='my-4 py-2 text-white'>
+                    <span className='flex ml-1'>
+                        <span className='text-xl'>
+                        <CiApple/>
+                        </span>
+                        <p className='ml-2'>PrepLabs</p>
+                    </span>
+                    <span className='flex ml-1'>
+                        <span className='text-xl'>
+                        <RiEnglishInput/>
+                        </span>
+                        <p className='ml-2'>language - English</p>
+                    </span>
+                    <span className='flex ml-1'>
+                        <span className='text-xl'>
+                        <AiOutlineCalendar/>
+                        </span>
+                        <p className='ml-2'>Updated on feb,2023</p>
+                    </span>
+                    <span className='flex ml-1'>
+                        <span className='text-xl'>
+                        <DiJavascript1/>
+                        </span>
+                        <p className='ml-2'>Development, Javascript</p>
+                    </span>
+                    <span className='flex ml-1'>
+                        <span className='text-xl'>
+                        <BsCalendar2Date/>
+                        </span>
+                        <p className='ml-2'>Uses in ---- --- ------</p>
+                    </span>
+                    <span className='flex ml-1'>
+                        <span className='text-xl'>
+                        <BsHourglassTop/>
+                        </span>
+                        <p className='ml-2'>40+ hours</p>
+                    </span>
+                    <span className='flex ml-1'>
+                        <span className='text-xl'>
+                        <BsBook/>
+                        </span>
+                        <p className='ml-2'>10 lectures</p>
+                    </span>
                 </div>
             </div>
-            <div className=' ml-2 md:ml-6'>
+            <div className=' ml-2 m-2 md:ml-6 '>
                 <p className='overflow-clip leading-relaxed'>
                     {showMore ? info : `${info.substring(0, 20)}... `}
                     <button

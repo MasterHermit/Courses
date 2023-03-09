@@ -1,0 +1,5 @@
+.course__banner{
+    background-image: url("./photo-1678282514397-b21cf697772b.avif");
+    /* background-repeat: no-repeat; */
+    object-fit: contain;
+}

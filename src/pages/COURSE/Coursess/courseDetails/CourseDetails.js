@@ -12,7 +12,17 @@ import {DiJavascript1} from 'react-icons/di';
 import {BsCalendar2Date} from 'react-icons/bs';
 import {BsHourglassTop} from 'react-icons/bs';
 import {BsBook} from 'react-icons/bs';
-import {logo} from './logo.svg'
+
+// import Accordion from './Accordion';
+// import Footer from "../../../../components/Footer/Footer"
+// import { CiApple } from 'react-icons/ci';
+// import { RiEnglishInput } from 'react-icons/ri';
+// import { AiOutlineCalendar } from 'react-icons/ai';
+// import { DiJavascript1 } from 'react-icons/di';
+// import { BsCalendar2Date } from 'react-icons/bs';
+// import { BsHourglassTop } from 'react-icons/bs';
+// import { BsBook } from 'react-icons/bs';
+
 
 
 const CourseDetails = () => {
@@ -42,21 +52,23 @@ const CourseDetails = () => {
         {
             id: 'l2kj5',
             label: 'Can I use React on a project?',
-            content:
-                'You can use React on any project you want. You can use React on any project you want. You can use React on any project you want. You can use React on any project you want.',
+            content:[
+                {
+                    title:"hooks in react",
+                    time:"13.46"
+                },
+                {
+                    title:"hooks in react",
+                    time:"13.46"
+                },
+                {
+                    title:"hooks in react",
+                    time:"13.46"
+                },
+            ]
+                
         },
-        {
-            id: 'lk2j35lkj',
-            label: 'Can I use Javascript on a project?',
-            content:
-                'You can use React on any project you want. You can use React on any project you want. You can use React on any project you want. You can use React on any project you want.',
-        },
-        {
-            id: 'l1kj2i0g',
-            label: 'Can I use CSS on a project?',
-            content:
-                'You can use React on any project you want. You can use React on any project you want. You can use React on any project you want. You can use React on any project you want.',
-        },
+       
     ];
 
 
@@ -75,49 +87,49 @@ const CourseDetails = () => {
                 <div className='my-4 py-2 text-white'>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <CiApple/>
+                            <CiApple />
                         </span>
                         <p className='ml-2'>PrepLabs</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <RiEnglishInput/>
+                            <RiEnglishInput />
                         </span>
                         <p className='ml-2'>language - English</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <AiOutlineCalendar/>
+                            <AiOutlineCalendar />
                         </span>
                         <p className='ml-2'>Updated on feb,2023</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <DiJavascript1/>
+                            <DiJavascript1 />
                         </span>
                         <p className='ml-2'>Development, Javascript</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <BsCalendar2Date/>
+                            <BsCalendar2Date />
                         </span>
                         <p className='ml-2'>Uses in ---- --- ------</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <BsHourglassTop/>
+                            <BsHourglassTop />
                         </span>
                         <p className='ml-2'>40+ hours</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <BsBook/>
+                            <BsBook />
                         </span>
                         <p className='ml-2'>10 lectures</p>
                     </span>
                 </div>
             </div>
-            <div className=' m-1 md:ml-6 bg-zinc-300'>
+            <div className=' m-1 md:m-2 bg-zinc-300'>
                 <p className='font-bold text-xl bg-zinc-400'>Course Description</p>
                 <p className='overflow-clip leading-relaxed m-2 text-justify'>
                     {showMore ? info : `${info.substring(0, 80)}... `}

@@ -32,7 +32,16 @@ function Accordion({ items }) {
                     {item.label}
                     {icon}
                 </div>
-                {isExpanded && <div className="border-b p-5">{item.content}</div>}
+                {isExpanded && <div className="border-b p-5">{
+                    item.content.map((data) => {
+                        return (
+                            <div className="flex flex-row justify-between mb-2 border-b" key={data.title}>
+                                <p className="ml-2" >{data.title}</p>
+                                <p className="mr-2">{data.time}</p>
+                            </div>
+                        )
+                    })
+                }</div>}
             </div>
         );
     });

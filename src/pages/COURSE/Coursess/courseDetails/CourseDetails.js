@@ -3,15 +3,15 @@ import { useParams } from 'react-router-dom';
 import { useFetchCourseQuery } from '../../../../store';
 import Error from "../../../Error/Error"
 import './CourseDetails.css';
-import CurriculumCard from './CurriculumCard';
+import Accordion from './Accordion';
 import Footer from "../../../../components/Footer/Footer"
-import {CiApple} from 'react-icons/ci';
-import {RiEnglishInput} from 'react-icons/ri';
-import {AiOutlineCalendar} from 'react-icons/ai';
-import {DiJavascript1} from 'react-icons/di';
-import {BsCalendar2Date} from 'react-icons/bs';
-import {BsHourglassTop} from 'react-icons/bs';
-import {BsBook} from 'react-icons/bs';
+import { CiApple } from 'react-icons/ci';
+import { RiEnglishInput } from 'react-icons/ri';
+import { AiOutlineCalendar } from 'react-icons/ai';
+import { DiJavascript1 } from 'react-icons/di';
+import { BsCalendar2Date } from 'react-icons/bs';
+import { BsHourglassTop } from 'react-icons/bs';
+import { BsBook } from 'react-icons/bs';
 
 
 const CourseDetails = () => {
@@ -41,21 +41,23 @@ const CourseDetails = () => {
         {
             id: 'l2kj5',
             label: 'Can I use React on a project?',
-            content:
-                'You can use React on any project you want. You can use React on any project you want. You can use React on any project you want. You can use React on any project you want.',
+            content:[
+                {
+                    title:"hooks in react",
+                    time:"13.46"
+                },
+                {
+                    title:"hooks in react",
+                    time:"13.46"
+                },
+                {
+                    title:"hooks in react",
+                    time:"13.46"
+                },
+            ]
+                
         },
-        {
-            id: 'lk2j35lkj',
-            label: 'Can I use Javascript on a project?',
-            content:
-                'You can use React on any project you want. You can use React on any project you want. You can use React on any project you want. You can use React on any project you want.',
-        },
-        {
-            id: 'l1kj2i0g',
-            label: 'Can I use CSS on a project?',
-            content:
-                'You can use React on any project you want. You can use React on any project you want. You can use React on any project you want. You can use React on any project you want.',
-        },
+       
     ];
 
 
@@ -74,43 +76,43 @@ const CourseDetails = () => {
                 <div className='my-4 py-2 text-white'>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <CiApple/>
+                            <CiApple />
                         </span>
                         <p className='ml-2'>PrepLabs</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <RiEnglishInput/>
+                            <RiEnglishInput />
                         </span>
                         <p className='ml-2'>language - English</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <AiOutlineCalendar/>
+                            <AiOutlineCalendar />
                         </span>
                         <p className='ml-2'>Updated on feb,2023</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <DiJavascript1/>
+                            <DiJavascript1 />
                         </span>
                         <p className='ml-2'>Development, Javascript</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <BsCalendar2Date/>
+                            <BsCalendar2Date />
                         </span>
                         <p className='ml-2'>Uses in ---- --- ------</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <BsHourglassTop/>
+                            <BsHourglassTop />
                         </span>
                         <p className='ml-2'>40+ hours</p>
                     </span>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
-                        <BsBook/>
+                            <BsBook />
                         </span>
                         <p className='ml-2'>10 lectures</p>
                     </span>

@@ -32,7 +32,7 @@ const CreatePost = () => {
         e.preventDefault();
         if (post.title.trim() === '') {
             toast.error("post  title is required !!")
-            console.log("title missing");
+
             return;
         }
 

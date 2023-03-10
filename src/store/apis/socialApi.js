@@ -9,9 +9,9 @@ const socialApi = createApi({
     endpoints(builder) {
         return {
             fetchAllPost: builder.query({
-                query: () => {
+                query: (pageNo) => {
                     return {
-                        url: "/posts",
+                        url: `/posts?page=${pageNo}`,
                         method: "GET",
                     }
                 }
@@ -27,18 +27,18 @@ const socialApi = createApi({
                 }
             }),
             updatePost: builder.mutation({
-                   query: (payload) => {
-                    
-                   }
+                query: (payload) => {
+
+                }
             }),
             updatePostLike: builder.mutation({
-                query:(payload)=>{
-                    
+                query: (payload) => {
+
                 }
             })
         }
     }
 })
 
-export const { useFetchAllPostQuery, useCreatePostMutation,useUpdatePostLikeMutation } = socialApi
+export const { useFetchAllPostQuery, useCreatePostMutation, useUpdatePostLikeMutation } = socialApi
 export { socialApi }

@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useFetchAllPostQuery } from "../../../store";
+import Loading from "../../Loading/Loading";
+import Error from "../../Error/Error"
 import Post from "../Post/Post"
 const Posts = () => {
-    const { data, error, isLoading } = useFetchAllPostQuery();
+    const [page, setPage] = useState(1);
+    const { data, error, isLoading } = useFetchAllPostQuery(page);
     let content;
     if (isLoading) {
-        content = <div>Loading...</div>
+        content = <Loading />
     }
     else if (error) {
-        content = <div>Error..</div>
+        content = <Error />
     } else {
         content = data.map((post) => {
-            return <Post data={post} />
+            return <Post key={post.id} data={post} />
         })
 
     }

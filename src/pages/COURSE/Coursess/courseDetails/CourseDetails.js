@@ -2,7 +2,16 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useFetchCourseQuery } from '../../../../store';
 import Error from "../../../Error/Error"
+import './CourseDetails.css';
+import CurriculumCard from './CurriculumCard';
 import Footer from "../../../../components/Footer/Footer"
+import {CiApple} from 'react-icons/ci';
+import {RiEnglishInput} from 'react-icons/ri';
+import {AiOutlineCalendar} from 'react-icons/ai';
+import {DiJavascript1} from 'react-icons/di';
+import {BsCalendar2Date} from 'react-icons/bs';
+import {BsHourglassTop} from 'react-icons/bs';
+import {BsBook} from 'react-icons/bs';
 
 const CourseDetails = () => {
     const { id } = useParams();
@@ -31,12 +40,12 @@ const CourseDetails = () => {
     const [showMore, setShowMore] = useState(false);
     const info = "When I read something on websites and saw a show more/less button, I thought it was a good feature because it makes everything on the website look more clean. So I would like to share an easy way to insert a show more/less button by using React- State Hook."
     return (
-        <div className='flex flex-col  h-auto  '>
-            <div className='  ml-2 md:ml-6'>
-                <p className='font-bold text-3xl'>
+        <div className='flex flex-col  h-auto'>
+            <div className='  m-1 md:ml-6 course__banner'>
+                <p className='font-bold text-3xl text-white m-1'>
                     Javascript in your finger tips : touch me
                 </p>
-                <p className='m-1 text-gray-400 text-justify'>
+                <p className='m-1 text-zinc-200 text-justify'>
                     Go from complete novice to expert in Javascript using step
                     -by-step, no-assumptions learning.
                 </p>
@@ -85,11 +94,12 @@ const CourseDetails = () => {
                     </span>
                 </div>
             </div>
-            <div className=' ml-2 md:ml-6'>
-                <p className='overflow-clip leading-relaxed'>
-                    {showMore ? info : `${info.substring(0, 20)}... `}
+            <div className=' m-1 md:ml-6 bg-zinc-300'>
+                <p className='font-bold text-xl bg-zinc-400'>Course Description</p>
+                <p className='overflow-clip leading-relaxed m-2 text-justify'>
+                    {showMore ? info : `${info.substring(0, 80)}... `}
                     <button
-                        className='underline'
+                        className='underline bg-blue-400 text-white hover:bg-blue-600 rounded-sm '
                         onClick={() => setShowMore(prevVal => !prevVal)}>
                         {showMore ? "show less" : " show more"}
                     </button>

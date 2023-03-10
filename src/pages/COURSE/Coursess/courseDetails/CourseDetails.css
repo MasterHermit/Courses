@@ -1,0 +1,5 @@
+.course__banner{
+    background-image: url("banner.jpg");
+    background-repeat: no-repeat;
+    object-fit: contain;
+}

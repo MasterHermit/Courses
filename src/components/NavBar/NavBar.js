@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineHome } from "react-icons/ai";
-import { MdOutlineBookOnline } from "react-icons/md"
+import { MdOutlineBookOnline } from "react-icons/md";
 import { BiUserCircle } from "react-icons/bi";
 import { VscFileCode } from "react-icons/vsc";
 import { RiSuitcaseLine } from "react-icons/ri";
@@ -18,53 +18,139 @@ const NavBar = () => {
     <div className="flex bg-[#9dcee2] justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-[#65010c] font-bold text-lg borderYtoX  ">
       <h1 className="w-full text-3xl font-bold text-black">PrepLabs</h1>
       <ul className="hidden md:flex">
-        <Link to="/">
-          <span className="flex ">
-            <span className="place-items-end self-center hover:text-cyan-600 hover:scale-110">
-              <AiOutlineHome />
-            </span>
-            <li className="p-4 hover:text-cyan-600 hover:scale-110 ">Home</li>
-          </span>
+        <Link to="/" className="self-center">
+          <button
+            data-popover-target="popover-Home"
+            type="button"
+            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+          >
+            <AiOutlineHome />
+          </button>
+          <div
+            data-popover
+            id="popover-Home"
+            role="tooltip"
+            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+          >
+            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
+              <h3 className="font-semibold text-gray-900 dark:text-white">
+                Home
+              </h3>
+            </div>
+            <div data-popper-arrow></div>
+          </div>
         </Link>
-        <Link to="/courses">
-          <span className="flex">
-            <span className="self-center hover:text-cyan-600 hover:scale-110">
-              <MdOutlineBookOnline />
-            </span>
-            <li className="p-4  hover:text-cyan-600 hover:scale-110">Courses</li>
-          </span>
+
+        <Link to="/courses" className="self-center ml-2">
+        <button
+            data-popover-target="popover-Courses"
+            type="button"
+            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+          >
+            <MdOutlineBookOnline />
+          </button>
+          <div
+            data-popover
+            id="popover-Courses"
+            role="tooltip"
+            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+          >
+            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
+              <h3 className="font-semibold text-gray-900 dark:text-white">
+                Course
+              </h3>
+            </div>
+            <div data-popper-arrow></div>
+          </div>
         </Link>
-        <Link to="jobs">
-          <span className="flex">
-            <span className="self-center hover:text-cyan-600 hover:scale-110">
-              <RiSuitcaseLine />
-            </span>
-            <li className="p-4  hover:text-cyan-600 hover:scale-110"> Jobs</li>
-          </span>
+
+        <Link to="jobs" className="self-center ml-2">
+        <button
+            data-popover-target="popover-Jobs"
+            type="button"
+            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+          >
+            <RiSuitcaseLine />
+          </button>
+          <div
+            data-popover
+            id="popover-Jobs"
+            role="tooltip"
+            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+          >
+            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
+              <h3 className="font-semibold text-gray-900 dark:text-white">
+                Jobs
+              </h3>
+            </div>
+            <div data-popper-arrow></div>
+          </div>
         </Link>
-        <Link to="/quiz">
-          <span className="flex">
-            <span className="self-center hover:text-cyan-600 hover:scale-110">
-              <VscFileCode />
-            </span>
-            <li className="p-4  hover:text-cyan-600 hover:scale-110">Quiz</li>
-          </span>
+        <Link to="/quiz" className="self-center ml-2">
+        <button
+            data-popover-target="popover-Quiz"
+            type="button"
+            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+          >
+            <VscFileCode />
+          </button>
+          <div
+            data-popover
+            id="popover-Quiz"
+            role="tooltip"
+            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+          >
+            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
+              <h3 className="font-semibold text-gray-900 dark:text-white">
+                Quiz
+              </h3>
+            </div>
+            <div data-popper-arrow></div>
+          </div>       
         </Link>
-        <Link to="/interest">
-          <span className="flex">
-            <span className="self-center hover:text-cyan-600 hover:scale-110">
-              <TfiNotepad />
-            </span>
-            <li className="p-4  hover:text-cyan-600 hover:scale-110">Interests</li>
-          </span>
+        <Link to="/interest" className="self-center ml-2">
+        <button
+            data-popover-target="popover-Interest"
+            type="button"
+            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+          >
+            <TfiNotepad />
+          </button>
+          <div
+            data-popover
+            id="popover-Interest"
+            role="tooltip"
+            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+          >
+            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
+              <h3 className="font-semibold text-gray-900 dark:text-white">
+                Interest
+              </h3>
+            </div>
+            <div data-popper-arrow></div>
+          </div>
         </Link>
-        <Link to="/user">
-          <span className="flex">
-            <span className="self-center  hover:text-cyan-600 hover:scale-110">
-              <BiUserCircle />
-            </span>
-            <li className="p-4  hover:text-cyan-600 hover:scale-110">User</li>
-          </span>
+        <Link to="/user" className=" self-center ml-2">
+        <button
+            data-popover-target="popover-User"
+            type="button"
+            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+          >
+            <BiUserCircle />
+          </button>
+          <div
+            data-popover
+            id="popover-User"
+            role="tooltip"
+            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+          >
+            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
+              <h3 className="font-semibold text-gray-900 dark:text-white">
+                Jobs
+              </h3>
+            </div>
+            <div data-popper-arrow></div>
+          </div>
         </Link>
       </ul>
       <div onClick={handleNav} className="block md:hidden">

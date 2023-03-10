@@ -41,7 +41,7 @@ const CourseDetails = () => {
     const info = "When I read something on websites and saw a show more/less button, I thought it was a good feature because it makes everything on the website look more clean. So I would like to share an easy way to insert a show more/less button by using React- State Hook."
     return (
         <div className='flex flex-col  h-auto'>
-            <div className='  m-1 md:ml-6 course__banner'>
+            <div className='  m-1 md:m-2 course__banner'>
                 <p className='font-bold text-3xl text-white m-1'>
                     Javascript in your finger tips : touch me
                 </p>

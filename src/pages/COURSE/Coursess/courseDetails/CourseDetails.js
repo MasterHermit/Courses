@@ -5,13 +5,14 @@ import Error from "../../../Error/Error"
 import './CourseDetails.css';
 import Accordion from "./Accordion";
 import Footer from "../../../../components/Footer/Footer"
-import {CiApple} from 'react-icons/ci';
-import {RiEnglishInput} from 'react-icons/ri';
-import {AiOutlineCalendar} from 'react-icons/ai';
-import {DiJavascript1} from 'react-icons/di';
-import {BsCalendar2Date} from 'react-icons/bs';
-import {BsHourglassTop} from 'react-icons/bs';
-import {BsBook} from 'react-icons/bs';
+import { CiApple } from 'react-icons/ci';
+import { RiEnglishInput } from 'react-icons/ri';
+import { AiOutlineCalendar } from 'react-icons/ai';
+import { DiJavascript1 } from 'react-icons/di';
+import { BsCalendar2Date } from 'react-icons/bs';
+import { BsHourglassTop } from 'react-icons/bs';
+import { BsBook } from 'react-icons/bs';
+import Feedback from '../Feedback/Feedback';
 
 // import Accordion from './Accordion';
 // import Footer from "../../../../components/Footer/Footer"
@@ -52,23 +53,23 @@ const CourseDetails = () => {
         {
             id: 'l2kj5',
             label: 'Can I use React on a project?',
-            content:[
+            content: [
                 {
-                    title:"hooks in react",
-                    time:"13.46"
+                    title: "hooks in react",
+                    time: "13.46"
                 },
                 {
-                    title:"hooks in react",
-                    time:"13.46"
+                    title: "hooks in react",
+                    time: "13.46"
                 },
                 {
-                    title:"hooks in react",
-                    time:"13.46"
+                    title: "hooks in react",
+                    time: "13.46"
                 },
             ]
-                
+
         },
-       
+
     ];
 
 
@@ -153,6 +154,10 @@ const CourseDetails = () => {
                 <div>
 
                 </div>
+            </div>
+            <div className='m-2 md:m-6'>
+                <p className='text-2xl font-bold mb-6'>Feedback</p>
+                <Feedback />
             </div>
             <Footer />
         </div>

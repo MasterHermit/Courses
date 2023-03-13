@@ -15,8 +15,9 @@ const NavBar = () => {
     setNav(!nav);
   };
   return (
-    <div className="flex bg-[#9dcee2] justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-[#65010c] font-bold text-lg borderYtoX">
-      <h1 className="w-full text-3xl font-bold text-black">PrepLabs</h1>
+
+    <div className="flex bg-[#9dcee2] justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-[#65010c] font-bold text-lg borderYtoX  ">
+      <h1 className="w-full text-3xl font-bold text-black">Codebeat</h1>
       <ul className="hidden md:flex">
         <Link to="/" className="self-center">
           <button

@@ -80,11 +80,11 @@ const CourseDetails = () => {
                 <p className='font-bold text-3xl text-white m-1'>
                     Javascript in your finger tips : touch me
                 </p>
-                <p className='m-1 text-zinc-200 text-justify'>
+                <p className='m-1 text-zinc-200 text-justify font-medium '>
                     Go from complete novice to expert in Javascript using step
                     -by-step, no-assumptions learning.
                 </p>
-                <div className='my-4 py-2 text-white'>
+                <div className='my-4 py-2 text-zinc-900 font-medium hover:font-bold'>
                     <span className='flex ml-1'>
                         <span className='text-xl'>
                             <CiApple />
@@ -130,20 +130,24 @@ const CourseDetails = () => {
                 </div>
             </div>
             <div className=' m-1 md:m-2 bg-zinc-300'>
-                <p className='font-bold text-xl bg-zinc-400'>Course Description</p>
+                <p className='font-bold text-xl bg-zinc-400'>
+                    <span className='ml-2'>
+                        Course Description
+                    </span>
+                </p> 
                 <p className='overflow-clip leading-relaxed m-2 text-justify'>
                     {showMore ? info : `${info.substring(0, 80)}... `}
                     <button
-                        className='underline bg-blue-400 text-white hover:bg-blue-600 rounded-sm '
+                        className='underline bg-blue-700 text-white hover:bg-blue-600 rounded-lg px-2'
                         onClick={() => setShowMore(prevVal => !prevVal)}>
                         {showMore ? "show less" : " show more"}
                     </button>
                 </p>
-                <div className="mt-6">Course Details klkdkjljklf</div>
+                <div className="mt-5 ml-2">Course Details klkdkjljklf</div>
             </div>
-            <div className='m-2 md:m-6'>
+            <div className='m-2 md:m-6 bg-slate-300'>
                 <div className='h-auto  '>
-                    <p className='text-2xl font-bold mb-6'>Course Content</p>
+                    <p className='text-2xl font-bold mb-6 ml-1'>Course Content</p>
                     <Accordion items={items} />
                 </div>
                 <div>

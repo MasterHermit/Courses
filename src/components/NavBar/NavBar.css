@@ -1,4 +1,4 @@
-/* Border in Y to X  */
+/* Border in Y to X 
 div.borderYtoX li:before, div.borderYtoX li:after
 {
     position: absolute;
@@ -26,4 +26,5 @@ div.borderYtoX li:hover:before, div.borderYtoX li:hover:after
 {
     opacity: 1;
     width: 100%;
-}
+} */
+

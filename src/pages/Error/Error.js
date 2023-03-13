@@ -19,7 +19,7 @@ const Error = () => {
                     The page you are looking for,maybe deleted
                   </p>
                   <a
-                    href="javascript:void(0)"
+                    href="/"
                     className="hover:text-primary inline-block rounded-lg border border-zinc-900 px-8 py-3 text-center text-base font-semibold text-sky-600 transition hover:bg-white bg-zinc-900"
                   >
                     Go To Home

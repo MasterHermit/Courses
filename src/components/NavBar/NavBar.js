@@ -15,16 +15,18 @@ const NavBar = () => {
     setNav(!nav);
   };
   return (
-    <div className="flex bg-[#9dcee2] justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-[#65010c] font-bold text-lg borderYtoX  ">
+    <div className="flex bg-[#9dcee2] justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-[#65010c] font-bold text-lg borderYtoX">
       <h1 className="w-full text-3xl font-bold text-black">PrepLabs</h1>
       <ul className="hidden md:flex">
         <Link to="/" className="self-center">
           <button
             data-popover-target="popover-Home"
             type="button"
-            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 "
           >
-            <AiOutlineHome />
+            <span className="text-3xl text-black">
+              <AiOutlineHome />
+            </span>
           </button>
           <div
             data-popover
@@ -42,12 +44,14 @@ const NavBar = () => {
         </Link>
 
         <Link to="/courses" className="self-center ml-2">
-        <button
+          <button
             data-popover-target="popover-Courses"
             type="button"
-            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110"
           >
-            <MdOutlineBookOnline />
+            <span className="text-3xl text-black">
+              <MdOutlineBookOnline />
+            </span>
           </button>
           <div
             data-popover
@@ -65,12 +69,14 @@ const NavBar = () => {
         </Link>
 
         <Link to="jobs" className="self-center ml-2">
-        <button
+          <button
             data-popover-target="popover-Jobs"
             type="button"
-            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110"
           >
-            <RiSuitcaseLine />
+            <span className="text-3xl text-black">
+              <RiSuitcaseLine />
+            </span>
           </button>
           <div
             data-popover
@@ -87,12 +93,14 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to="/quiz" className="self-center ml-2">
-        <button
+          <button
             data-popover-target="popover-Quiz"
             type="button"
-            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110"
           >
-            <VscFileCode />
+            <span className="text-3xl text-black">
+              <VscFileCode />
+            </span>
           </button>
           <div
             data-popover
@@ -106,15 +114,17 @@ const NavBar = () => {
               </h3>
             </div>
             <div data-popper-arrow></div>
-          </div>       
+          </div>
         </Link>
         <Link to="/interest" className="self-center ml-2">
-        <button
+          <button
             data-popover-target="popover-Interest"
             type="button"
-            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110"
           >
-            <TfiNotepad />
+            <span className="text-3xl text-black">
+              <TfiNotepad />
+            </span>
           </button>
           <div
             data-popover
@@ -131,12 +141,14 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to="/user" className=" self-center ml-2">
-        <button
+          <button
             data-popover-target="popover-User"
             type="button"
-            className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110"
           >
-            <BiUserCircle />
+            <span className="text-3xl text-black">
+              <BiUserCircle />
+            </span>
           </button>
           <div
             data-popover
@@ -146,7 +158,7 @@ const NavBar = () => {
           >
             <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
               <h3 className="font-semibold text-gray-900 dark:text-white">
-                Jobs
+                User
               </h3>
             </div>
             <div data-popper-arrow></div>
@@ -159,27 +171,57 @@ const NavBar = () => {
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#bfdbf7] ease-in-out duration-500 z-40"
-            : "ease-in-out duration-500 fixed left-[-100%]"
+            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#bfdbf7] ease-in-out duration-500 z-40 "
+            : "ease-in-out duration-500 text-gray-100 fixed left-[-100%]"
         }
       >
         <Link to="/">
-          <li className="p-4 border-b border-gray-600 ">Home</li>
+          <span className="text-xl flex border-b border-gray-600">
+            <span className="ml-1 self-center">
+              <AiOutlineHome />
+            </span>
+            <li className="p-4 ">Home</li>
+          </span>
         </Link>
         <Link to="/courses">
-          <li className="p-4 border-b border-gray-600">Courses</li>
+          <span className="text-xl flex border-b border-gray-600">
+            <span className="ml-1 self-center">
+              <MdOutlineBookOnline />
+            </span>
+            <li className="p-4 ">Courses</li>
+          </span>
         </Link>
         <Link to="jobs">
-          <li className="p-4 border-b border-gray-600"> Jobs</li>
+          <span className="text-xl flex border-b border-gray-600">
+            <span className="ml-1 self-center">
+              <RiSuitcaseLine />
+            </span>
+            <li className="p-4 "> Jobs</li>
+          </span>
         </Link>
         <Link to="/quiz">
-          <li className="p-4 border-b border-gray-600">Quiz</li>
+          <span className="text-xl flex border-b border-gray-600">
+            <span className="ml-1 self-center">
+              <VscFileCode />
+            </span>
+            <li className="p-4 ">Quiz</li>
+          </span>
         </Link>
         <Link to="/interest ">
-          <li className="p-4 border-b border-gray-600">Interests</li>
+          <span className="text-xl flex border-b border-gray-600">
+            <span className="ml-1 self-center">
+              <TfiNotepad />
+            </span>
+            <li className="p-4 ">Interests</li>
+          </span>
         </Link>
         <Link to="/user">
-          <li className="p-4 border-b border-gray-600">User</li>
+          <span className="text-xl flex border-b border-gray-600">
+            <span className="m-1 self-center">
+              <BiUserCircle />
+            </span>
+            <li className="p-4 ">User</li>
+          </span>
         </Link>
       </ul>
     </div>

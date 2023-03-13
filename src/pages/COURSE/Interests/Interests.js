@@ -1,93 +1,38 @@
+// import React, { useState } from 'react';
+// import Interest from './Interest';
 
-
-import React, { useState } from 'react';
-import Interest from './Interest';
-
+import React from 'react';
+import SearchBar from '../../../components/searchBar/SearchBar';
 
 const Interests = () => {
-    const [data, setData] = useState(Interest);
-    const filterResult = (catItem) => {
-        const result = Interest.filter((curData) => {
-            return curData.Interests === catItem;
-        });
-        setData(result);
-    }
     return (
-        <>
-            <h2 class="text-4xl font-extrabold dark:text-white text-center">Interests</h2>
-
-            {/* left sidebar */}
-            <div className='flex flex-row w-screen  justify-center items-center'>
-                <div id="default-sidebar" className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-                    <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-                        <ul className="space-y-2">
-                            <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={() => setData(Interest)}>All</button>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('Engineering')}>Engineering</button>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('Medical')}>Medical</button>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('Administration')}>Administration</button>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('B.Sc')}>B.Sc</button>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('PCM')}>PCM</button>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('PCMB')}>PCMB</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                {/* right sidebar */}
-                <div className="  flex flex-row flex-wrap justify-center items-center ml-[300px]" >
-                    {data.map((values) => {
-                        const { id, title, image } = values;
-                        return (
-                            <>
-                                <div className="max-w-sm rounded overflow-hidden shadow-lg " key={id}>
-                                    <img className="w-full" src={image} alt="..." />
-                                    <div className="px-6 py-4">
-                                        <div className="font-bold text-xl mb-2">{title}</div>
-                                        <p className="text-gray-700 text-base">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                                        </p>
-                                        <button className="btn btn-dark">Buy Now</button>
-                                    </div>
-
-                                </div>
-                            </>
-                        )
-                    })}
-
-                </div >
+        <div className='bg-zinc-100 h-screen mt-2'>
+            <div>
+                <SearchBar/>
+            </div>
+            <div className=' m-4'>
+                <h1 className='font-bold text-4xl'>Choose Your Interests</h1>
+                <p className='text-xl'>Pick your Favourite Topics to set up your Skills!!!!</p>
+            </div>
+            <div className='m-3 flex flex-wrap justify-center gap-4'>
+                <button className='px-2 rounded-full bg-slate-300 box-content h-10 w-auto hover:scale-110 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-center dark:hover:bg-green-600 dark:focus:ring-green-800'>Photography</button>
+                <button className='px-2 rounded-full bg-slate-300 box-content h-10 w-auto hover:scale-110 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-center dark:hover:bg-green-600 dark:focus:ring-green-800'>Books</button>
+                <button className='px-2 rounded-full bg-slate-300 box-content h-10 w-auto hover:scale-110 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-center dark:hover:bg-green-600 dark:focus:ring-green-800'>Reading</button>
+                <button className='px-2 rounded-full bg-slate-300 box-content h-10 w-auto hover:scale-110 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-center dark:hover:bg-green-600 dark:focus:ring-green-800'>Gaming</button>
+                <button className='px-2 rounded-full bg-slate-300 box-content h-10 w-auto hover:scale-110 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-center dark:hover:bg-green-600 dark:focus:ring-green-800'>Travelling</button>
+                <button className='px-2 rounded-full bg-slate-300 box-content h-10 w-auto hover:scale-110 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-center dark:hover:bg-green-600 dark:focus:ring-green-800'>Writing</button>
+                <button className='px-2 rounded-full bg-slate-300 box-content h-10 w-auto hover:scale-110 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-center dark:hover:bg-green-600 dark:focus:ring-green-800'>Philosophy</button>
+                <button className='px-2 rounded-full bg-slate-300 box-content h-10 w-auto hover:scale-110 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-center dark:hover:bg-green-600 dark:focus:ring-green-800'>Cinematography</button>
+                <button className='px-2 rounded-full bg-slate-300 box-content h-10 w-auto hover:scale-110 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-center dark:hover:bg-green-600 dark:focus:ring-green-800'>Drawing</button>
+                <button className='px-2 rounded-full bg-slate-300 box-content h-10 w-auto hover:scale-110 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-center dark:hover:bg-green-600 dark:focus:ring-green-800'>Cooking</button>
 
             </div>
+            <div className='absolute bottom-3 right-0 left-0 font-sm  text-center'>
 
+                <button className='m-2 bg-purple-400 rounded-full content-center box-content h-10 w-[95vw] md:w-[40vw] md:itmes-center hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium text-center dark:hover:bg-purple-600 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50'>Continue</button>
+            </div>
+        </div>
+    );
+};
 
-        </>
-    )
-}
-
-export default Interests
+export default Interests;

@@ -38,7 +38,7 @@ const Post = ({ data }) => {
                     <img className='w-screen md:w-[650px] md:h-[277px] ' src={data.banner} alt='post' />
                 ) : null}
             </div>
-            <div className='flex flex-col bg-amber-400 max-w-full md:w-[650px] p-4'>
+            <div className='flex flex-col bg-zinc-200 max-w-full md:w-[650px] p-4'>
                 <div className='text-3xl font-semibold'>
                     <p>{data.title}</p>
                 </div>

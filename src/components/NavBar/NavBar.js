@@ -16,7 +16,7 @@ const NavBar = () => {
   };
   return (
     <div className="flex bg-[#9dcee2] justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-[#65010c] font-bold text-lg borderYtoX  ">
-      <h1 className="w-full text-3xl font-bold text-black">PrepLabs</h1>
+      <h1 className="w-full text-3xl font-bold text-black">Codebeat</h1>
       <ul className="hidden md:flex">
         <Link to="/" className="self-center">
           <button
@@ -42,7 +42,7 @@ const NavBar = () => {
         </Link>
 
         <Link to="/courses" className="self-center ml-2">
-        <button
+          <button
             data-popover-target="popover-Courses"
             type="button"
             className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
@@ -65,7 +65,7 @@ const NavBar = () => {
         </Link>
 
         <Link to="jobs" className="self-center ml-2">
-        <button
+          <button
             data-popover-target="popover-Jobs"
             type="button"
             className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
@@ -87,7 +87,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to="/quiz" className="self-center ml-2">
-        <button
+          <button
             data-popover-target="popover-Quiz"
             type="button"
             className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
@@ -106,10 +106,10 @@ const NavBar = () => {
               </h3>
             </div>
             <div data-popper-arrow></div>
-          </div>       
+          </div>
         </Link>
         <Link to="/interest" className="self-center ml-2">
-        <button
+          <button
             data-popover-target="popover-Interest"
             type="button"
             className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"
@@ -131,7 +131,7 @@ const NavBar = () => {
           </div>
         </Link>
         <Link to="/user" className=" self-center ml-2">
-        <button
+          <button
             data-popover-target="popover-User"
             type="button"
             className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-110"

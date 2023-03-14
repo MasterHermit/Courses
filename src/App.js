@@ -18,7 +18,7 @@ import ResetPassword from "./pages/USER/ResetPassword/ResetPassword";
 
 function App() {
   return (
-    <div className="">
+    <div className="scroll-smooth">
       <Router>
         <NavBar />
         <Routes>

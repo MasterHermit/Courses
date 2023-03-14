@@ -1,6 +1,5 @@
 import React,{ useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import LogOut from './LogOut';
 import { SidebarData } from './SidebarData';
 import { GiHamburgerMenu } from 'react-icons/gi';
 

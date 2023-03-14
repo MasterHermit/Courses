@@ -11,7 +11,7 @@ const Feedback = () => {
             <div>
                 <CreateFeedback />
             </div>
-            <div className="md:flex md:flex-row md:flex-wrap md:ml-24">
+            <div className="md:flex md:flex-row md:flex-wrap md:ml-24 md:mt-10">
                 <DisplayFeedback />
                 <DisplayFeedback />
                 <DisplayFeedback />

@@ -2,7 +2,7 @@ import React from 'react';
 import Sidebar  from '../Sidebar/Sidebar';
 
 
-export default function Exams() {
+export default function MyExams() {
   return (
     <div className="flex flex-col h-auto md:flex-row">
       <Sidebar/>

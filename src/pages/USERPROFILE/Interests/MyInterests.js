@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar  from '../Sidebar/Sidebar';
 
-export default function Interests() {
+export default function MyInterests() {
   return (
     <div className="flex flex-col h-auto md:flex-row">
       <Sidebar/>

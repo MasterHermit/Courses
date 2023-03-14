@@ -69,7 +69,7 @@ export default function OTP() {
     return (
         <div>
 
-            <div className="h-screen   bg-sky-100 py-20 px-3">
+            <div className="h-screen bg-sky-100 py-20 px-3">
                 <div className="container mx-auto border-5 border-orange-500">
                     <div className="max-w-sm mx-auto md:max-w-lg border-2">
                         <div className="w-full">
@@ -100,7 +100,7 @@ export default function OTP() {
 
 
 
-                                <OTPInput className="ml-5 md:ml-32 mt-6  w-full" value={otp} onChange={handleChange} autoFocus OTPLength={6} otpType="number" disabled={false} secure separator={<span>-</span>} />
+                                <OTPInput className="justify-center md:ml-32 mt-6 ml-5" value={otp} onChange={handleChange} autoFocus OTPLength={6} otpType="number" disabled={false} secure separator={<span>-</span>} />
 
                                 <div className="countdown-text mt-3">
                                     {seconds > 0 || minutes > 0 ? (

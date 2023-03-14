@@ -1,0 +1,7 @@
+.hideeye {
+    float: right;
+    margin-right: 6px;
+    margin-top: -65px;
+    position: relative;
+    z-index: 2;
+}

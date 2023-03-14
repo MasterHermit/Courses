@@ -1,6 +1,5 @@
 import React,{ useState } from 'react';
 import { GiCancel } from 'react-icons/gi';
-import SearchBar from '../components/SearchBar';
 
 export default function SkillModal( { isVisible, onClose } ) {
     
@@ -20,8 +19,6 @@ export default function SkillModal( { isVisible, onClose } ) {
             onClick={ ()=>onClose() } >
                 <GiCancel/>
             </button>
-
-            <SearchBar/>
             
             <div className='p-2 rounded mb-2'>
                 <form>

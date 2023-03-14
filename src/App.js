@@ -26,8 +26,8 @@ import MyProfile from "./pages/USERPROFILE/Profile/MyProfile";
 import MyCourses from "./pages/USERPROFILE/Mycourses/MyCourses";
 import InprogressCourses from "./pages/USERPROFILE/Mycourses/InprogressCourses";
 import CompletedCourses from "./pages/USERPROFILE/Mycourses/CompletedCourses";
-import AddProfile from "./pages/USERPROFILE/Edit Profile/AddProfile";
-import  Settings  from "./pages/USERPROFILE/Settings/";
+import AddProfile from "./pages/USERPROFILE/EditMyProfile/AddProfile";
+import  Settings  from "./pages/USERPROFILE/Settings/Settings";
 
 function App() {
   return (

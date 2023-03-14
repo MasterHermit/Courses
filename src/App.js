@@ -14,7 +14,7 @@ import Error from "./pages/Error/Error";
 
 function App() {
   return (
-    <div className="">
+    <div className="scroll-smooth">
       <Router>
         <NavBar />
         <Routes>

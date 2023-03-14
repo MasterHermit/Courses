@@ -16,16 +16,16 @@ const NavBar = () => {
   };
   return (
 
-    <div className="flex bg-[#9dcee2] justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-[#65010c] font-bold text-lg borderYtoX  ">
+    <div className="flex  justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-zinc-300 font-bold text-lg borderYtoX navbar border-b border-black">
       <h1 className="w-full text-3xl font-bold text-black">Codebeat</h1>
       <ul className="hidden md:flex">
         <Link to="/" className="self-center">
           <button
             data-popover-target="popover-Home"
             type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 "
+            className="link m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out "
           >
-            <span className="text-3xl text-black">
+            <span className="text-3xl text-black home">
               <AiOutlineHome />
             </span>
           </button>
@@ -33,7 +33,7 @@ const NavBar = () => {
             data-popover
             id="popover-Home"
             role="tooltip"
-            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800 "
           >
             <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
               <h3 className="font-semibold text-gray-900 dark:text-white">
@@ -48,7 +48,7 @@ const NavBar = () => {
           <button
             data-popover-target="popover-Courses"
             type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out"
           >
             <span className="text-3xl text-black">
               <MdOutlineBookOnline />
@@ -73,7 +73,7 @@ const NavBar = () => {
           <button
             data-popover-target="popover-Jobs"
             type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out"
           >
             <span className="text-3xl text-black">
               <RiSuitcaseLine />
@@ -97,7 +97,7 @@ const NavBar = () => {
           <button
             data-popover-target="popover-Quiz"
             type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out"
           >
             <span className="text-3xl text-black">
               <VscFileCode />
@@ -121,7 +121,7 @@ const NavBar = () => {
           <button
             data-popover-target="popover-Interest"
             type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out"
           >
             <span className="text-3xl text-black">
               <TfiNotepad />
@@ -145,7 +145,7 @@ const NavBar = () => {
           <button
             data-popover-target="popover-User"
             type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110"
+            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out"
           >
             <span className="text-3xl text-black">
               <BiUserCircle />
@@ -166,18 +166,18 @@ const NavBar = () => {
           </div>
         </Link>
       </ul>
-      <div onClick={handleNav} className="block md:hidden">
+      <div onClick={handleNav} className="block md:hidden bg-cyan-900 rounded-full p-2">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#bfdbf7] ease-in-out duration-500 z-40 "
-            : "ease-in-out duration-500 text-gray-100 fixed left-[-100%]"
+            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#126171] transition duration-500 ease-in-out z-40"
+            : "ease-linear duration-500 text-gray-100 fixed left-[-100%]"
         }
       >
         <Link to="/">
-          <span className="text-xl flex border-b border-gray-600">
+          <span className="text-xl flex border-b border-gray-900 shadow-xl">
             <span className="ml-1 self-center">
               <AiOutlineHome />
             </span>
@@ -185,7 +185,7 @@ const NavBar = () => {
           </span>
         </Link>
         <Link to="/courses">
-          <span className="text-xl flex border-b border-gray-600">
+          <span className="text-xl flex border-b border-gray-900 shadow-xl">
             <span className="ml-1 self-center">
               <MdOutlineBookOnline />
             </span>
@@ -193,7 +193,7 @@ const NavBar = () => {
           </span>
         </Link>
         <Link to="jobs">
-          <span className="text-xl flex border-b border-gray-600">
+          <span className="text-xl flex border-b border-gray-900 shadow-xl">
             <span className="ml-1 self-center">
               <RiSuitcaseLine />
             </span>
@@ -201,7 +201,7 @@ const NavBar = () => {
           </span>
         </Link>
         <Link to="/quiz">
-          <span className="text-xl flex border-b border-gray-600">
+          <span className="text-xl flex border-b border-gray-900 shadow-xl">
             <span className="ml-1 self-center">
               <VscFileCode />
             </span>
@@ -209,7 +209,7 @@ const NavBar = () => {
           </span>
         </Link>
         <Link to="/interest ">
-          <span className="text-xl flex border-b border-gray-600">
+          <span className="text-xl flex border-b border-gray-900 shadow-xl">
             <span className="ml-1 self-center">
               <TfiNotepad />
             </span>
@@ -217,7 +217,7 @@ const NavBar = () => {
           </span>
         </Link>
         <Link to="/user">
-          <span className="text-xl flex border-b border-gray-600">
+          <span className="text-xl flex border-b border-gray-900 shadow-xl">
             <span className="m-1 self-center">
               <BiUserCircle />
             </span>

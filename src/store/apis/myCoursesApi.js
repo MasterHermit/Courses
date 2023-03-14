@@ -10,7 +10,7 @@ const myCoursesApi = createApi({
             fetchMyCourses: builder.query({
                 query: () => {
                     return {
-                        url:"mycourses",
+                        url: "/mycourses",
                         // url: "users/:user_id/mycourses",
                         method: "GET"
                     };
@@ -20,19 +20,19 @@ const myCoursesApi = createApi({
             fetchInprogressCourses: builder.query({
                 query: () => {
                     return {
-                        url:"mycourses_inprogress",
+                        url: "/mycourses_inprogress",
                         // url: "users/:user_id/mycourses/inprogress",
-                        method:"GET"
+                        method: "GET"
                     };
                 },
             }),
 
-            fetchCompletedCourse : builder.query({
-                query: ()=> {
+            fetchCompletedCourse: builder.query({
+                query: () => {
                     return {
-                        url:"mycourses_completed",
+                        url: "/mycourses_completed",
                         // url:"users/:user_id/mycourses/completed",
-                        method:"GET"
+                        method: "GET"
                     }
                 }
             })

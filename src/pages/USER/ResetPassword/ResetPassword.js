@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import axios from "axios";
 import './ResetPassword.css';
@@ -22,18 +22,18 @@ export default function ResetPassword() {
         e.preventDefault();
 
         const data = {
-            email:email,
-            password:password
+            email: email,
+            password: password
         };
 
-        axios.post('accounts/api/websites/create-new-password/',data)
-        .then( res => {
-            console.log(res)
-            navigate("/login")
-        })
-        .catch( err => {
-            console.log(err)
-        } )
+        axios.post('accounts/api/websites/create-new-password/', data)
+            .then(res => {
+                console.log(res)
+                navigate("/login")
+            })
+            .catch(err => {
+                console.log(err)
+            })
 
     }
 
@@ -46,23 +46,25 @@ export default function ResetPassword() {
 
                         <form onSubmit={handleSubmit}>
 
-                        <input
+                            <input
                                 type="text"
                                 onChange={(e) => setEmail(e.target.value)}
-                                className="block border border-grey-light p-3 rounded mb-4 bg-blue-300 text-white w-64 md:w-80"
+                                className="block border border-grey-light p-3 rounded mb-4 bg-blue-300 text-white w-full md:w-80"
                                 name="email"
                                 value={email}
-                                placeholder="Email" />
+                                placeholder="Email"
 
-                                <input
+                            />
+
+                            <input
                                 type={show ? "text" : "password"}
                                 onChange={(e) => setPassword(e.target.value)}
-                                className="block border border-grey-light w-full p-3 rounded mb-4 bg-blue-300 text-white w-64 md:w-80"
+                                className="block  border border-grey-light w-full p-3 rounded mb-4 bg-blue-300 text-white  md:w-80"
                                 name="password"
                                 value={password}
                                 placeholder="Password" />
 
-                            <span className='hideeye' onClick={handleEyeToogle}>{show ? <AiFillEyeInvisible /> : <AiFillEye />}</span>
+                            <span className='hideeye ' onClick={handleEyeToogle}>{show ? <AiFillEyeInvisible /> : <AiFillEye />}</span>
 
                             <button
                                 type="submit"

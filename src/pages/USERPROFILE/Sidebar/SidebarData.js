@@ -9,41 +9,41 @@ export const SidebarData = [
     { 
         title:"CERTIFICATES",
         icon:<HiOutlineNewspaper/>,
-        link:'/certificates'
+        link:'/users/:userid/certificates'
     },
     {
         title:"POSTS",
         icon:<MdLocalPostOffice/>,
-        link:"/posts"
+        link:"/users/:userid/posts"
     },
     {
         title:"COURSES",
         icon:<ImBooks/>,
-        link:"/mycourses"
+        link:"/users/:userid/mycourses"
     },
     {
         title:"JOBS",
         icon:<MdOutlineWork/>,
-        link:"/jobs"    
+        link:"/users/:userid/jobs"    
     },
     {
         title:"EXAMS",
         icon:<MdQuiz/>,
-        link:"/exams"
+        link:"/users/:userid/exams"
     },
     {
         title:"INTERESTS",
         icon:<GiSelfLove/>,
-        link:"/interests"
+        link:"/users/:userid/interests"
     },
     {
         title:"EDIT PROFILE",
         icon:<AiFillSetting/>,
-        link:"/edit"
+        link:"/users/:userid/edit"
     },
     {
         title:"SETTINGS",
         icon:<AiFillSetting/>,
-        link:"/settings"
+        link:"/users/:userid/settings"
     }
 ]

@@ -31,7 +31,7 @@ import  Settings  from "./pages/USERPROFILE/Settings/";
 
 function App() {
   return (
-    <div className="scroll-smooth">
+    <div className="">
       <Router>
         <NavBar />
         <Routes>

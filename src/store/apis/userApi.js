@@ -1,17 +1,17 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const userApi = createApi({
-    reducerPath:"user",
-    baseQuery:fetchBaseQuery({
-        baseUrl:"http://192.168.1.15:8000"
+    reducerPath: "user",
+    baseQuery: fetchBaseQuery({
+        baseUrl: "http://localhost:8000"
     }),
-    endpoints(builder){
+    endpoints(builder) {
         return {
             fetchUserProfile: builder.query({
                 query: () => {
                     return {
-                        url:"/userprofile/api/website/user-profile/",
-                        method:"GET"
+                        url: "/userprofile/api/website/user-profile/",
+                        method: "GET"
                     }
                 }
             }),
@@ -19,12 +19,12 @@ const userApi = createApi({
             updateUserProfile: builder.mutation({
                 query: (profile) => {
                     return {
-                        headers:{
-                            'Content-type':"application/json"
+                        headers: {
+                            'Content-type': "application/json"
                         },
-                        url:"userprofile/api/website/user-profile",
-                        method:"POST",
-                        body:profile
+                        url: "userprofile/api/website/user-profile",
+                        method: "POST",
+                        body: profile
                     }
                 }
             })

@@ -6,7 +6,7 @@ import Certifications from './Certifications';
 import Address from './Address';
 import Experiencedetails from './Experiencedetails';
 
-export default function Interests() {
+export default function AddProfile() {
   return (
     <div className="flex flex-col h-auto md:flex-row">
       <Sidebar/>

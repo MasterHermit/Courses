@@ -1,8 +1,8 @@
 import React from 'react';
-import { useFetchJobsQuery } from '../store';
+import { useFetchJobsQuery } from '../../../store';
 import Sidebar  from '../Sidebar/Sidebar';
 
-export default function Jobs() {
+export default function MyJobs() {
 
   const {data,error,isLoading} = useFetchJobsQuery();
   let content;

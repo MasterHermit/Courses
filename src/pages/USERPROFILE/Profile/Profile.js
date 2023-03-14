@@ -6,7 +6,7 @@ import ExperienceModal from './ExperienceModal';
 import EducationModal from './EducationModal';
 import CertificateModal from './CertificateModal';
 import { IoMdAddCircle } from 'react-icons/io';
-import { SocialIcon } from 'react-social-icons';
+// import { SocialIcon } from 'react-social-icons';
 
 export default function Profile( { userprofile } ) {
 
@@ -28,10 +28,10 @@ export default function Profile( { userprofile } ) {
 
         <div className='md:w-3/5'>
           <UserInfo />
-          <SocialIcon className='mt-8 ml-2' url="https://twitter.com" />
+          {/* <SocialIcon className='mt-8 ml-2' url="https://twitter.com" />
           <SocialIcon className='mt-8 ml-2' url="https://google.com" />
           <SocialIcon className='mt-8 ml-2' url="https://instagram.com" />
-          <SocialIcon className='mt-8 ml-2' url="https://facebook.com" />
+          <SocialIcon className='mt-8 ml-2' url="https://facebook.com" /> */}
         </div>
       </div>
 

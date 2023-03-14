@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
-import Profile from './ProfileProfile';
-import { useFetchUserProfileQuery } from '../store/apis/userApi';
+import Profile from './Profile';
+import { useFetchUserProfileQuery } from '../../../store';
 
 export default function MyProfile() {
 

@@ -87,7 +87,7 @@ export default function OTP() {
 
                                 <input
                                     type="email"
-                                    className="mt-3 p-3 w-64 md:w-64"
+                                    className="mt-3 p-3 md:w-64"
                                     onChange={(e) => setEmail(e.target.value)}
                                     value={email}
                                     placeholder="Enter the Email"
@@ -100,7 +100,9 @@ export default function OTP() {
 
 
 
+
                                 <OTPInput className="justify-center md:ml-32 mt-6 ml-5" value={otp} onChange={handleChange} autoFocus OTPLength={6} otpType="number" disabled={false} secure separator={<span>-</span>} />
+
 
                                 <div className="countdown-text mt-3">
                                     {seconds > 0 || minutes > 0 ? (

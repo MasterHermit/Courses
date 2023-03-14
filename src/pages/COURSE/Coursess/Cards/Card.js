@@ -7,9 +7,9 @@ import { FaStar } from "react-icons/fa"
 const Card = ({ course }) => {
 
   return (
-    <div className='flex p-2 '>
+    <div className='flex p-4'>
 
-      <div className='flex bg-zinc-500 flex-col h-[400px] w-[400px] max-w-xs rounded overflow-hidden mb-3 shadow-lg'>
+      <div className='flex bg-zinc-500 flex-col h-[400px] w-[400px] max-w-xs rounded overflow-hidden mb-3 shadow-2xl hover:scale-110 transition duration-300 ease-in-out'>
 
         <Link to={`/courses/${course.course_id}`}>
           <div
@@ -18,7 +18,6 @@ const Card = ({ course }) => {
           </div>
         </Link>
         <div className='flex flex-col h-auto w-auto bg-zinc-50'>
-
           <Link to={`/courses/${course.course_id}`}>
             <div
               className=' h-[100px] flex items-center mt-4 text-xl font-bold hover:text-sky-400 cursor-pointer'>{course.title}
@@ -27,7 +26,7 @@ const Card = ({ course }) => {
 
           <hr className="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700 "></hr>
           <div className='flex flex-row justify-between'>
-            <div className='flex ml-[10px] pb-1 text-sky-400/100'>
+            <div className='flex ml-[10px] pb-1 text-sky-400/100 '>
               <span className='pt-1 pr-1'>
                 <GiDuration />
               </span>

@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 
 import "./Login.css";
-import { useUserAuth } from '../context/UserAuthContextProvider';
+// import { useUserAuth } from '../context/UserAuthContextProvider';
 
 export default function Login() {
 
@@ -20,13 +20,14 @@ export default function Login() {
 
 
     const navigate = useNavigate();
-    const { logIn, googleSignIn } = useUserAuth();
+    // const { logIn, googleSignIn } = useUserAuth();
 
     const handleGoogleSignIn = async (e) => {
 
         e.preventDefault();
         try {
-            await googleSignIn();
+            // await googleSignIn();
+            console.log("Google Signin");
             navigate("/home");
         }
         catch (err) {

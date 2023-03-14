@@ -1,52 +1,32 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Error = () => {
     return (
-        <div className="bg-primary relative z-10 py-[360px] bg-gray-800">
-          <div className="container mx-auto">
-            <div className="-mx-4 flex">
-              <div className="w-full px-4">
-                <div className="mx-auto max-w-[400px] text-center">
-                  <h2
-                    className="mb-2 text-[50px] font-bold leading-none text-white sm:text-[80px] md:text-[100px]"
-                  >
-                    404
-                  </h2>
-                  <h4 className="mb-3 text-[22px] font-semibold leading-tight text-white">
-                    Oops! That page can’t be found
-                  </h4>
-                  <p className="mb-8 text-lg text-white">
-                    The page you are looking for,maybe deleted
-                  </p>
-                  <a
-                    href="/"
-                    className="hover:text-primary inline-block rounded-lg border border-zinc-900 px-8 py-3 text-center text-base font-semibold text-sky-600 transition hover:bg-white bg-zinc-900"
-                  >
-                    Go To Home
-                  </a>
-                </div>
+      <div className="lg:px-24 lg:py-24 md:py-20 md:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:gap-28 gap-16">
+                  <div className="xl:pt-24 w-full xl:w-1/2 relative pb-12 lg:pb-0">
+                      <div className="relative">
+                          <div className="absolute">
+                              <div className="">
+                                  <h1 className="my-2 text-gray-800 font-bold text-2xl">
+                                      Looks like you've found the
+                                      doorway to the great nothing
+                                  </h1>
+                                  <p className="my-2 text-gray-800">Sorry about that! Please visit our hompage to get where you need to go.</p>
+                                  <Link to='/'>
+                                  <button className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Home</button>
+                                  </Link>
+                              </div>
+                          </div>
+                          <div>
+                              <img src="https://i.ibb.co/G9DC8S0/404-2.png" />
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <img src="https://i.ibb.co/ck1SGFJ/Group.png" />
+                  </div>
               </div>
-            </div>
-          </div>
-          <div
-            className="absolute top-0 left-0 -z-10 flex h-full w-full items-center justify-between space-x-5 md:space-x-8 lg:space-x-14"
-          >
-            <div
-              className="h-full w-1/3 bg-gradient-to-t from-[#FFFFFF14] to-[#C4C4C400]"
-            ></div>
-            <div className="flex h-full w-1/3">
-              <div
-                className="h-full w-1/2 bg-gradient-to-b from-[#FFFFFF14] to-[#C4C4C400]"
-              ></div>
-              <div
-                className="h-full w-1/2 bg-gradient-to-t from-[#FFFFFF14] to-[#C4C4C400]"
-              ></div>
-            </div>
-            <div
-              className="h-full w-1/3 bg-gradient-to-b from-[#FFFFFF14] to-[#C4C4C400]"
-            ></div>
-          </div>
-        </div>
         
           );
 };

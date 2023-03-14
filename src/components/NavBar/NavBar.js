@@ -16,7 +16,9 @@ const NavBar = () => {
   };
   return (
 
+
     <div className="flex  justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-zinc-300 font-bold text-lg borderYtoX navbar border-b border-black">
+
       <h1 className="w-full text-3xl font-bold text-black">Codebeat</h1>
       <ul className="hidden md:flex">
         <Link to="/" className="self-center">
@@ -25,8 +27,10 @@ const NavBar = () => {
             type="button"
             className="link m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out "
           >
+
             <span className="text-3xl text-black home">
               <AiOutlineHome />
+
             </span>
           </button>
           <div

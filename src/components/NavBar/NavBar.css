@@ -27,6 +27,7 @@ div.borderYtoX li:hover:before, div.borderYtoX li:hover:after
     opacity: 1;
     width: 100%;
 } */
+
 *{
     scroll-behavior: smooth;
 }
@@ -52,3 +53,4 @@ div.borderYtoX li:hover:before, div.borderYtoX li:hover:after
   transition: 0.4s;
   transform: translateY(2px);
 } */
+

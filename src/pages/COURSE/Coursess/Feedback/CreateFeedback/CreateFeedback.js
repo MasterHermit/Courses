@@ -13,7 +13,7 @@ const CreateFeedback = () => {
 
     return (
 
-        <form className="w-full h-[28rem] border-2 shadow-sm">
+        <form className="sm: w-full md:w-[50rem] md:ml-[30rem] h-[28rem] border-2 shadow-sm">
             <div>
                 <div className="star-rating h-[2rem] ml-2 text-2xl">
                     {[...Array(5)].map((star, index) => {

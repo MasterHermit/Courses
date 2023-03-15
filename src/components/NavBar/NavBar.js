@@ -16,156 +16,27 @@ const NavBar = () => {
   };
   return (
 
-    <div className="flex  justify-between items-center h-24 max-w-[1240] mx-auto px-4 text-zinc-300 font-bold text-lg borderYtoX navbar border-b border-black bg-[#126171]">
-      <h1 className="w-full text-3xl font-bold text-black">Codebeat</h1>
-      <ul className="hidden md:flex">
-        <Link to="/" className="self-center">
-          <button
-            data-popover-target="popover-Home"
-            type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out "
-          >
-            <span className="text-3xl text-black">
-              <AiOutlineHome />
-
-            </span>
-          </button>
-          <div
-            data-popover
-            id="popover-Home"
-            role="tooltip"
-            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800 "
-          >
-            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
-              <h3 className="font-semibold text-gray-900 dark:text-white">
-                Home
-              </h3>
-            </div>
-            <div data-popper-arrow></div>
-          </div>
-        </Link>
-
-        <Link to="/courses" className="self-center ml-2">
-          <button
-            data-popover-target="popover-Courses"
-            type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out"
-          >
-            <span className="text-3xl text-black">
-              <MdOutlineBookOnline />
-            </span>
-          </button>
-          <div
-            data-popover
-            id="popover-Courses"
-            role="tooltip"
-            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
-          >
-            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
-              <h3 className="font-semibold text-gray-900 dark:text-white">
-                Course
-              </h3>
-            </div>
-            <div data-popper-arrow></div>
-          </div>
-        </Link>
-
-        <Link to="jobs" className="self-center ml-2">
-          <button
-            data-popover-target="popover-Jobs"
-            type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out"
-          >
-            <span className="text-3xl text-black">
-              <RiSuitcaseLine />
-            </span>
-          </button>
-          <div
-            data-popover
-            id="popover-Jobs"
-            role="tooltip"
-            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
-          >
-            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
-              <h3 className="font-semibold text-gray-900 dark:text-white">
-                Jobs
-              </h3>
-            </div>
-            <div data-popper-arrow></div>
-          </div>
-        </Link>
-        <Link to="/quiz" className="self-center ml-2">
-          <button
-            data-popover-target="popover-Quiz"
-            type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out"
-          >
-            <span className="text-3xl text-black">
-              <VscFileCode />
-            </span>
-          </button>
-          <div
-            data-popover
-            id="popover-Quiz"
-            role="tooltip"
-            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
-          >
-            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
-              <h3 className="font-semibold text-gray-900 dark:text-white">
-                Quiz
-              </h3>
-            </div>
-            <div data-popper-arrow></div>
-          </div>
-        </Link>
-        <Link to="/interest" className="self-center ml-2">
-          <button
-            data-popover-target="popover-Interest"
-            type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out"
-          >
-            <span className="text-3xl text-black">
-              <TfiNotepad />
-            </span>
-          </button>
-          <div
-            data-popover
-            id="popover-Interest"
-            role="tooltip"
-            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
-          >
-            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
-              <h3 className="font-semibold text-gray-900 dark:text-white">
-                Interest
-              </h3>
-            </div>
-            <div data-popper-arrow></div>
-          </div>
-        </Link>
-        <Link to="/user" className=" self-center ml-2">
-          <button
-            data-popover-target="popover-User"
-            type="button"
-            className="m-2 text-white hover:bg-white focus:ring-4 focus:bg-white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:hover:bg-white dark:focus:ring-blue-800 hover:scale-110 transition duration-300 ease-in-out"
-          >
-            <span className="text-3xl text-black">
-              <BiUserCircle />
-            </span>
-          </button>
-          <div
-            data-popover
-            id="popover-User"
-            role="tooltip"
-            className="absolute z-10 invisible inline-block w-30 h-8 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
-          >
-            <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-lg dark:border-gray-600 dark:bg-gray-700">
-              <h3 className="font-semibold text-gray-900 dark:text-white">
-                User
-              </h3>
-            </div>
-            <div data-popper-arrow></div>
-          </div>
-        </Link>
+    <div className="flex  justify-between items-center h-24 max-w-screen mx-auto px-4 text-zinc-300 font-bold text-lg navbar border-b border-black bg-[#fff]">
+      <h1 className="w-auto text-3xl font-bold text-black">Codebeat</h1>
+        <ul className='borderYtoX  cursor-pointer hidden md:flex text-black md:mr-[4rem] space-x-4 text-xl'>
+          <Link to='/'>
+            <li className='p-4 hover:text-[#a2d2ff] hover:dark:text-blue-600 hover:scale-110'>Home</li>
+          </Link>
+          <Link to='/courses'>
+            <li className='p-4 hover:dark:text-blue-600 hover:scale-110'>Course</li>
+          </Link>
+          <Link to='/quiz'>
+            <li className='p-4 hover:dark:text-blue-600 hover:scale-110'>Quiz</li>
+          </Link>
+          <Link to='/interest'>
+            <li className='p-4 hover:dark:text-blue-600 hover:scale-110'>Interest</li>
+          </Link>   
+          <Link to='/jobs'>
+            <li className='p-4 hover:dark:text-blue-600 hover:scale-110'>Job</li>
+          </Link>
+          <Link to='/user'>
+            <li className='p-4 hover:dark:text-blue-600 hover:scale-110'>User</li>
+          </Link>
       </ul>
       <div onClick={handleNav} className="block md:hidden bg-cyan-900 rounded-full p-2">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}

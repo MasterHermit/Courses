@@ -1,4 +1,4 @@
-/* Border in Y to X 
+/* Border in Y to X */
 div.borderYtoX li:before, div.borderYtoX li:after
 {
     position: absolute;
@@ -6,7 +6,7 @@ div.borderYtoX li:before, div.borderYtoX li:after
     width: 0%;
     height: 2px;
     content: '';
-    background: #FFF;
+    background: #ac0303;
     transition: all 0.3s;
 }
 
@@ -26,6 +26,42 @@ div.borderYtoX li:hover:before, div.borderYtoX li:hover:after
 {
     opacity: 1;
     width: 100%;
+} 
+
+/* circle behind */
+/* div.circleBehind li:before, div.circleBehind li:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind li:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind li:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind li:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
 } */
 
 /* *{

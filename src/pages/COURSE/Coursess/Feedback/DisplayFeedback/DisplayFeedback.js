@@ -4,7 +4,7 @@ import { AiOutlineStar, AiFillStar } from "react-icons/ai"
 const DisplayFeedback = () => {
     return (
         <div className='h-full flex p-2'>
-            <div className=" flex bg-gray-400 flex-col h-[400px] w-[400px]  rounded overflow-hidden shadow-lg p-3">
+            <div className=" flex border-2 flex-col h-[350px] w-[350px]  rounded overflow-hidden shadow-lg p-3">
                 <div className='flex flex-row items-center'>
                     <img className="w-20 h-20 rounded-full" src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHl0aG9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
                     <div className=''>
@@ -13,11 +13,11 @@ const DisplayFeedback = () => {
                             <div className="stars flex flex-row">
                                 {Array(4).fill(<AiFillStar />)}
                             </div>
-                            <p class="ml-2 text-sm font-medium text-zinc-700/100 dark:text-gray-400">a year ago</p>
+                            <p class="ml-2 text-sm font-medium text-zinc-700/100 dark:text-gray-500">a year ago</p>
                         </div>
                     </div>
                 </div>
-                <div className='mt-2 mb-4 font-medium text-sm text-justify'>
+                <div className='mt-2 mb-4 text-sm text-justify'>
                     I just finished watching the section 2 projects. Most of the them
                     appear too be fairly similar to others. While the projects are different
                     or even unique, the javasctipt used in them are nearly the same. On to the next
